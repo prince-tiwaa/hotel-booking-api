@@ -1,0 +1,190 @@
+@HotelListing.Api_HostAddress = https://localhost:7233
+@json = application/json
+@today = {{$localDatetime iso8601}}
+@hotelId = 3
+@bookingId = 1
+@countryId = 1
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjJjNWQyMS03MzZkLTRjNjMtYTdkOS01MmViYzA3M2M1NmEiLCJlbWFpbCI6ImFkbWluQGxvY2FsaG9zdC5jb20iLCJqdGkiOiI4ZGM0MzZjYy1hN2MzLTQxNDktODI5ZC1hNzgwNzJhYWY4ZjUiLCJuYW1lIjoiTHVrbWFuIEFkZW95ZSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmF0b3IiLCJleHAiOjE3NzA2NjgwNDQsImlzcyI6IkhvdGVsTGlzdGluZ0FwaSIsImF1ZCI6IkhvdGVsTGlzdGluZ0FQSUNsaWVudCJ9.bwMuqaYs7mPx8pGIPRv7YnEnXYU6Od7qm1Yas9ckgBc
+@baseUrl = https://localhost:7233
+
+POST {{HotelListing.Api_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "adminhotel@localhost.com",
+  "password": "Tiwa001.",
+  "firstName": "Admin",
+  "lastName": "Hotel",
+  "role": "Hotel Admin",
+   "associatedHotelId": 3
+}
+###
+POST {{HotelListing.Api_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "admin@localhost.com",
+  "password": "Tiwa001.",
+  "firstName": "Lukman",
+  "lastName": "Adeoye",
+  "role": "Administrator",
+   "associatedHotelId": 2
+}
+###
+
+POST {{HotelListing.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@localhost.com",
+  "password": "Tiwa001."
+}
+
+###
+
+###
+
+POST {{HotelListing.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "lukmanuser@gmail.com",
+  "password": "Tiwa001."
+}
+
+###
+#1. Create BookingDto - 3 nights
+POST {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "hotelId": {{hotelId}},
+  "checkIn": "2026-01-14",
+  "checkOut": "2026-01-16",
+  "numberOfGuests": 2
+}
+
+###
+#2. Create BookingDto - Different hotel, single night stay
+POST {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "hotelId": {{hotelId}},
+  "checkIn": "2026-01-14",
+  "checkOut": "2026-01-15",
+  "numberOfGuests": 1
+}
+
+###
+#3. Create BookingDto - Invalid (CheckOut before CheckIn)
+POST {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "hotelId": {{hotelId}},
+  "checkIn": "2026-01-16",
+  "checkOut": "2026-01-15",
+  "numberOfGuests": 1
+}
+
+###
+#4. Create BookingDto - Invalid (Guests<=0>)
+POST {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "hotelId": {{hotelId}},
+  "checkIn": "2026-01-14",
+  "checkOut": "2026-01-15",
+  "numberOfGuests": 0
+}
+
+###
+#5. Create BookingDto - Conflict - Overlap test (use an earlier booking date)
+POST {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "hotelId": {{hotelId}},
+  "checkIn": "2026-01-14",
+  "checkOut": "2026-01-15",
+  "numberOfGuests": 1
+}
+
+###
+#6 Update Booking
+PUT {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking/{{bookingid}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "checkIn": "2026-01-15",
+  "checkOut": "2026-01-19",
+  "numberOfGuests": 1
+}
+###
+#7 Admin confirm booking
+PUT {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking/{{bookingid}}/admin/confirm
+Content-Type: application/json
+Authorization: Bearer {{token}}
+###
+
+#List all bokings for hotel
+GET {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking
+Authorization: Bearer {{token}}
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking/admin
+Authorization: Bearer {{token}}
+###
+
+POST {{HotelListing.Api_HostAddress}}/api/hotels
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Radisson",
+  "address": "GRA Ikeja",
+  "rating": 5,
+  "countryId": 2
+}
+
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/countries
+#Authorization: Bearer {{token}}
+
+###
+
+###
+GET {{HotelListing.Api_HostAddress}}/api/countries?Search=United
+Authorization: Bearer {{token}}
+###
+
+
+GET {{HotelListing.Api_HostAddress}}/api/hotels/{{hotelId}}/bookingsHotelBooking/admin
+Authorization: Bearer {{token}}
+
+###
+
+@id = 1
+PATCH {{HotelListing.Api_HostAddress}}/api/countries/{{id}}
+Content-Type: application/json-patch+json
+Authorization: Bearer {{token}}
+
+[
+  {
+    "path": "/ShortName",
+    "op": "replace",
+    "value": "UK"
+  }
+]
+### Health Check Testing
+GET {{baseUrl}}/healthz/ready
+Accept: application/json
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/hotels
+Authorization: Bearer {{token}}
+
+###

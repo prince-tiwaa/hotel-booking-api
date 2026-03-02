@@ -1,0 +1,37 @@
+2026-02-03 10:37:16.072 +01:00 [INF] Starting Hotel Listing API
+2026-02-03 10:37:21.322 +01:00 [INF] Hotel Listing API started successfully
+2026-02-03 10:37:22.700 +01:00 [INF] Now listening on: https://localhost:7233
+2026-02-03 10:37:22.713 +01:00 [INF] Now listening on: http://localhost:5107
+2026-02-03 10:37:22.861 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 10:37:22.881 +01:00 [INF] Hosting environment: Development
+2026-02-03 10:37:22.885 +01:00 [INF] Content root path: C:\Users\adeoy\source\repos\HotelListing.Api\HotelListing.Api
+2026-02-03 10:37:32.375 +01:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-03 10:37:32.393 +01:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-03 10:37:39.498 +01:00 [ERR] User registration failed for adminhotel@localhost.com: Error { Code = BadRequest, Description = Username 'adminhotel@localhost.com' is already taken., IsNone = False }
+2026-02-03 10:38:22.278 +01:00 [WRN] Failed login attempt for email: admin@localhostu.com
+2026-02-03 10:47:26.017 +01:00 [ERR] User registration failed for adminhotel@localhost.com: Error { Code = BadRequest, Description = Username 'adminhotel@localhost.com' is already taken., IsNone = False }
+2026-02-03 11:53:11.600 +01:00 [INF] Starting Hotel Listing API
+2026-02-03 11:53:15.362 +01:00 [INF] Hotel Listing API started successfully
+2026-02-03 11:53:16.546 +01:00 [INF] Now listening on: https://localhost:7233
+2026-02-03 11:53:16.561 +01:00 [INF] Now listening on: http://localhost:5107
+2026-02-03 11:53:16.726 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 11:53:16.729 +01:00 [INF] Hosting environment: Development
+2026-02-03 11:53:16.743 +01:00 [INF] Content root path: C:\Users\adeoy\source\repos\HotelListing.Api\HotelListing.Api
+2026-02-03 11:53:19.002 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 97.9389ms
+2026-02-03 11:53:47.495 +01:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-03 11:53:47.502 +01:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-03 11:53:52.578 +01:00 [ERR] User registration failed for adminhotel@localhost.com: Error { Code = BadRequest, Description = Username 'adminhotel@localhost.com' is already taken., IsNone = False }
+2026-02-03 11:53:52.620 +01:00 [INF] HTTP POST /api/auth/register responded 400 in 8570.3583ms
+2026-02-03 12:02:26.936 +01:00 [INF] HTTP POST /api/auth/login responded 200 in 1096.5200ms
+2026-02-03 12:11:53.253 +01:00 [INF] Starting Hotel Listing API
+2026-02-03 12:11:55.369 +01:00 [INF] Hotel Listing API started successfully
+2026-02-03 12:11:56.699 +01:00 [INF] Now listening on: https://localhost:7233
+2026-02-03 12:11:56.710 +01:00 [INF] Now listening on: http://localhost:5107
+2026-02-03 12:11:56.959 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 12:11:56.961 +01:00 [INF] Hosting environment: Development
+2026-02-03 12:11:56.966 +01:00 [INF] Content root path: C:\Users\adeoy\source\repos\HotelListing.Api\HotelListing.Api
+2026-02-03 12:12:00.382 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 98.8493ms
+2026-02-03 12:12:10.175 +01:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-03 12:12:10.189 +01:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-03 12:12:17.045 +01:00 [ERR] User registration failed for adminhotel@localhost.com: Error { Code = BadRequest, Description = Username 'adminhotel@localhost.com' is already taken., IsNone = False }
+2026-02-03 12:12:17.086 +01:00 [INF] HTTP POST /api/auth/register responded 400 in 10707.7953ms

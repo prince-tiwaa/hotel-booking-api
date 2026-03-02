@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<RestoreUseStaticGraphEvaluation>false</RestoreUseStaticGraphEvaluation>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\HotelListing.Api.Domain\HotelListing.Api.Domain.csproj" />
+		<ProjectReference Include="..\HotelListing.Api.Common\HotelListing.Api.Common.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="16.0.0" />
+	</ItemGroup>
+
+</Project>

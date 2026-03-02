@@ -1,0 +1,14 @@
+2026-02-02 15:58:08.041 +01:00 [INF] Starting Hotel Listing API
+2026-02-02 15:58:10.205 +01:00 [INF] Hotel Listing API started successfully
+2026-02-02 16:03:00.782 +01:00 [INF] Starting Hotel Listing API
+2026-02-02 16:03:02.452 +01:00 [INF] Hotel Listing API started successfully
+2026-02-02 21:48:24.033 +01:00 [INF] Starting Hotel Listing API
+2026-02-02 21:48:27.378 +01:00 [INF] Hotel Listing API started successfully
+2026-02-02 21:48:28.222 +01:00 [INF] Now listening on: https://localhost:7233
+2026-02-02 21:48:28.244 +01:00 [INF] Now listening on: http://localhost:5107
+2026-02-02 21:48:28.356 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-02 21:48:28.358 +01:00 [INF] Hosting environment: Development
+2026-02-02 21:48:28.360 +01:00 [INF] Content root path: C:\Users\adeoy\source\repos\HotelListing.Api\HotelListing.Api
+2026-02-02 21:49:00.408 +01:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-02 21:49:00.419 +01:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-02 21:49:05.981 +01:00 [ERR] User registration failed for adminhotel@localhost.com: Error { Code = BadRequest, Description = Username 'adminhotel@localhost.com' is already taken., IsNone = False }

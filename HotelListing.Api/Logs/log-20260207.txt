@@ -1,0 +1,1244 @@
+2026-02-07 08:55:01.114 +01:00 [INF] Starting Hotel Listing API
+2026-02-07 08:55:05.903 +01:00 [INF] Hotel Listing API started successfully
+2026-02-07 08:55:06.245 +01:00 [INF] Initializing UI Database
+2026-02-07 08:55:07.489 +01:00 [INF] Saving healthchecks configuration to database
+2026-02-07 08:55:08.098 +01:00 [INF] Now listening on: https://localhost:7233
+2026-02-07 08:55:08.103 +01:00 [INF] Now listening on: http://localhost:5107
+2026-02-07 08:55:11.503 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:55:11.511 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:55:11.526 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-07 08:55:11.528 +01:00 [INF] Hosting environment: Development
+2026-02-07 08:55:11.531 +01:00 [INF] Content root path: C:\Users\adeoy\source\repos\HotelListing.Api\HotelListing.Api
+2026-02-07 08:55:11.697 +01:00 [ERR] HTTP GET /healthz responded 500 in 4.9109ms
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-07 08:55:11.734 +01:00 [ERR] An unhandled exception occurred while processing therequest. TraceId: 00-5e3aa7eb702462c54d0f7dd3ead6be94-886147dd759552ed-00, Path: /healthz, Method: GET
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-02-07 08:55:11.829 +01:00 [INF] Received HTTP response headers after 308.2985ms - 500
+2026-02-07 08:55:11.835 +01:00 [INF] End processing HTTP request after 340.2301ms - 500
+2026-02-07 08:55:12.259 +01:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 0.9843ms
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-07 08:55:12.279 +01:00 [ERR] An unhandled exception occurred while processing therequest. TraceId: 00-765d470c1d204d3bcd4f526e46e8e281-b106d91861e49985-00, Path: /swagger/v1/swagger.json, Method: GET
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-02-07 08:55:22.419 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:55:22.428 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:55:22.433 +01:00 [ERR] HTTP GET /healthz responded 500 in 1.1745ms
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-07 08:55:22.449 +01:00 [ERR] An unhandled exception occurred while processing therequest. TraceId: 00-da1d3aef79f3183d975faf1cd8603a32-ea070817dbd7ddf8-00, Path: /healthz, Method: GET
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-02-07 08:55:22.493 +01:00 [INF] Received HTTP response headers after 62.5326ms - 500
+2026-02-07 08:55:22.496 +01:00 [INF] End processing HTTP request after 76.4381ms - 500
+2026-02-07 08:55:22.518 +01:00 [INF] Notification is sent on same window time.
+2026-02-07 08:55:28.336 +01:00 [ERR] HTTP GET /swagger/index.html responded 500 in 1.3383ms
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-07 08:55:28.357 +01:00 [ERR] An unhandled exception occurred while processing therequest. TraceId: 00-66f2960bf36211c9082ea8e000fe0884-6d3fb1cf5412ec4d-00, Path: /swagger/index.html, Method: GET
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-02-07 08:55:28.643 +01:00 [ERR] HTTP GET /favicon.ico responded 500 in 1.0137ms
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-07 08:55:28.663 +01:00 [ERR] An unhandled exception occurred while processing therequest. TraceId: 00-7a7786661df53052033f9cc164527e09-86133bc70961ff8c-00, Path: /favicon.ico, Method: GET
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-02-07 08:55:32.554 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:55:32.559 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:55:32.572 +01:00 [ERR] HTTP GET /healthz responded 500 in 1.6418ms
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-02-07 08:55:32.586 +01:00 [ERR] An unhandled exception occurred while processing therequest. TraceId: 00-52c7ad4308691a12ebb8c5eace880df6-318d059a6c87d038-00, Path: /healthz, Method: GET
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.GetOrCreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.UnnamedOptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_3(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method55(Closure, Object, HttpContext, IServiceProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-02-07 08:55:32.607 +01:00 [INF] Received HTTP response headers after 36.8851ms - 500
+2026-02-07 08:55:32.609 +01:00 [INF] End processing HTTP request after 55.5305ms - 500
+2026-02-07 08:55:32.613 +01:00 [INF] Notification is sent on same window time.
+2026-02-07 08:58:56.555 +01:00 [INF] Starting Hotel Listing API
+2026-02-07 08:59:00.181 +01:00 [INF] Hotel Listing API started successfully
+2026-02-07 08:59:00.403 +01:00 [INF] Initializing UI Database
+2026-02-07 08:59:01.714 +01:00 [INF] Saving healthchecks configuration to database
+2026-02-07 08:59:02.734 +01:00 [INF] Now listening on: https://localhost:7233
+2026-02-07 08:59:02.742 +01:00 [INF] Now listening on: http://localhost:5107
+2026-02-07 08:59:03.613 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:03.636 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:03.659 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-07 08:59:03.663 +01:00 [INF] Hosting environment: Development
+2026-02-07 08:59:03.666 +01:00 [INF] Content root path: C:\Users\adeoy\source\repos\HotelListing.Api\HotelListing.Api
+2026-02-07 08:59:04.364 +01:00 [INF] HTTP GET /swagger/index.html responded 200 in 323.5808ms
+2026-02-07 08:59:05.547 +01:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-02-07 08:59:05.949 +01:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 243.1349ms
+2026-02-07 08:59:06.076 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 445.8530ms
+2026-02-07 08:59:06.116 +01:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-07 08:59:06.123 +01:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-07 08:59:09.606 +01:00 [INF] HTTP GET /healthz responded 200 in 5627.3375ms
+2026-02-07 08:59:09.613 +01:00 [INF] Received HTTP response headers after 5964.009ms - 200
+2026-02-07 08:59:09.627 +01:00 [INF] End processing HTTP request after 6029.7559ms - 200
+2026-02-07 08:59:20.422 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:20.427 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:20.470 +01:00 [INF] HTTP GET /healthz responded 200 in 34.6843ms
+2026-02-07 08:59:20.472 +01:00 [INF] Received HTTP response headers after 38.6458ms - 200
+2026-02-07 08:59:20.489 +01:00 [INF] End processing HTTP request after 66.7021ms - 200
+2026-02-07 08:59:30.592 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:30.611 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:30.651 +01:00 [INF] HTTP GET /healthz responded 200 in 21.9136ms
+2026-02-07 08:59:30.656 +01:00 [INF] Received HTTP response headers after 28.3516ms - 200
+2026-02-07 08:59:30.672 +01:00 [INF] End processing HTTP request after 90.8644ms - 200
+2026-02-07 08:59:40.697 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:40.701 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:40.712 +01:00 [INF] HTTP GET /healthz responded 200 in 3.3935ms
+2026-02-07 08:59:40.712 +01:00 [INF] Received HTTP response headers after 4.6199ms - 200
+2026-02-07 08:59:40.725 +01:00 [INF] End processing HTTP request after 28.0197ms - 200
+2026-02-07 08:59:50.751 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:50.789 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 08:59:50.806 +01:00 [INF] HTTP GET /healthz responded 200 in 5.6075ms
+2026-02-07 08:59:50.807 +01:00 [INF] Received HTTP response headers after 8.9995ms - 200
+2026-02-07 08:59:50.814 +01:00 [INF] End processing HTTP request after 63.3453ms - 200
+2026-02-07 09:00:00.834 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:00.843 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:00.883 +01:00 [INF] HTTP GET /healthz responded 200 in 33.2734ms
+2026-02-07 09:00:00.884 +01:00 [INF] Received HTTP response headers after 36.9568ms - 200
+2026-02-07 09:00:00.899 +01:00 [INF] End processing HTTP request after 65.0604ms - 200
+2026-02-07 09:00:10.917 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:10.921 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:10.929 +01:00 [INF] HTTP GET /healthz responded 200 in 4.7515ms
+2026-02-07 09:00:10.930 +01:00 [INF] Received HTTP response headers after 6.7827ms - 200
+2026-02-07 09:00:10.943 +01:00 [INF] End processing HTTP request after 26.5444ms - 200
+2026-02-07 09:00:20.961 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:20.967 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:20.976 +01:00 [INF] HTTP GET /healthz responded 200 in 3.9562ms
+2026-02-07 09:00:20.976 +01:00 [INF] Received HTTP response headers after 5.4372ms - 200
+2026-02-07 09:00:20.986 +01:00 [INF] End processing HTTP request after 25.9179ms - 200
+2026-02-07 09:00:31.002 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:31.018 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:31.033 +01:00 [INF] HTTP GET /healthz responded 200 in 6.6780ms
+2026-02-07 09:00:31.034 +01:00 [INF] Received HTTP response headers after 8.7051ms - 200
+2026-02-07 09:00:31.066 +01:00 [INF] End processing HTTP request after 64.2153ms - 200
+2026-02-07 09:00:41.095 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:41.100 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:41.111 +01:00 [INF] HTTP GET /healthz responded 200 in 5.4103ms
+2026-02-07 09:00:41.112 +01:00 [INF] Received HTTP response headers after 7.8626ms - 200
+2026-02-07 09:00:41.122 +01:00 [INF] End processing HTTP request after 26.4824ms - 200
+2026-02-07 09:00:51.175 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:51.184 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:00:51.196 +01:00 [INF] HTTP GET /healthz responded 200 in 6.6300ms
+2026-02-07 09:00:51.196 +01:00 [INF] Received HTTP response headers after 9.7962ms - 200
+2026-02-07 09:00:51.215 +01:00 [INF] End processing HTTP request after 40.5604ms - 200
+2026-02-07 09:01:01.241 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:01.249 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:01.263 +01:00 [INF] HTTP GET /healthz responded 200 in 4.6237ms
+2026-02-07 09:01:01.263 +01:00 [INF] Received HTTP response headers after 7.9831ms - 200
+2026-02-07 09:01:01.273 +01:00 [INF] End processing HTTP request after 31.7961ms - 200
+2026-02-07 09:01:11.281 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:11.284 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:11.318 +01:00 [INF] HTTP GET /healthz responded 200 in 3.0346ms
+2026-02-07 09:01:11.318 +01:00 [INF] Received HTTP response headers after 28.7284ms - 200
+2026-02-07 09:01:11.326 +01:00 [INF] End processing HTTP request after 44.7812ms - 200
+2026-02-07 09:01:21.343 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:21.347 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:21.360 +01:00 [INF] HTTP GET /healthz responded 200 in 8.5621ms
+2026-02-07 09:01:21.360 +01:00 [INF] Received HTTP response headers after 10.4109ms - 200
+2026-02-07 09:01:21.368 +01:00 [INF] End processing HTTP request after 25.6841ms - 200
+2026-02-07 09:01:31.386 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:31.391 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:31.400 +01:00 [INF] HTTP GET /healthz responded 200 in 4.7515ms
+2026-02-07 09:01:31.400 +01:00 [INF] Received HTTP response headers after 6.1472ms - 200
+2026-02-07 09:01:31.408 +01:00 [INF] End processing HTTP request after 22.2835ms - 200
+2026-02-07 09:01:41.420 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:41.425 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:41.436 +01:00 [INF] HTTP GET /healthz responded 200 in 5.1038ms
+2026-02-07 09:01:41.436 +01:00 [INF] Received HTTP response headers after 7.208ms - 200
+2026-02-07 09:01:41.445 +01:00 [INF] End processing HTTP request after 24.4695ms - 200
+2026-02-07 09:01:51.462 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:51.466 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:01:51.514 +01:00 [INF] HTTP GET /healthz responded 200 in 44.1707ms
+2026-02-07 09:01:51.514 +01:00 [INF] Received HTTP response headers after 45.6101ms - 200
+2026-02-07 09:01:51.522 +01:00 [INF] End processing HTTP request after 60.0474ms - 200
+2026-02-07 09:02:01.552 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:01.556 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:01.562 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8359ms
+2026-02-07 09:02:01.562 +01:00 [INF] Received HTTP response headers after 3.9778ms - 200
+2026-02-07 09:02:01.568 +01:00 [INF] End processing HTTP request after 16.2573ms - 200
+2026-02-07 09:02:11.587 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:11.593 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:11.619 +01:00 [INF] HTTP GET /healthz responded 200 in 19.6132ms
+2026-02-07 09:02:11.619 +01:00 [INF] Received HTTP response headers after 21.9027ms - 200
+2026-02-07 09:02:11.632 +01:00 [INF] End processing HTTP request after 45.3782ms - 200
+2026-02-07 09:02:21.645 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:21.647 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:21.653 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6816ms
+2026-02-07 09:02:21.653 +01:00 [INF] Received HTTP response headers after 3.6391ms - 200
+2026-02-07 09:02:21.663 +01:00 [INF] End processing HTTP request after 18.6355ms - 200
+2026-02-07 09:02:31.680 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:31.684 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:31.695 +01:00 [INF] HTTP GET /healthz responded 200 in 5.2846ms
+2026-02-07 09:02:31.697 +01:00 [INF] Received HTTP response headers after 10.4822ms - 200
+2026-02-07 09:02:31.703 +01:00 [INF] End processing HTTP request after 22.7848ms - 200
+2026-02-07 09:02:41.726 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:41.730 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:41.746 +01:00 [INF] HTTP GET /healthz responded 200 in 6.5243ms
+2026-02-07 09:02:41.746 +01:00 [INF] Received HTTP response headers after 8.0882ms - 200
+2026-02-07 09:02:41.759 +01:00 [INF] End processing HTTP request after 33.4641ms - 200
+2026-02-07 09:02:51.768 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:51.770 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:02:51.782 +01:00 [INF] HTTP GET /healthz responded 200 in 3.6878ms
+2026-02-07 09:02:51.783 +01:00 [INF] Received HTTP response headers after 5.6372ms - 200
+2026-02-07 09:02:51.792 +01:00 [INF] End processing HTTP request after 24.6012ms - 200
+2026-02-07 09:03:01.827 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:01.841 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:01.850 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2252ms
+2026-02-07 09:03:01.851 +01:00 [INF] Received HTTP response headers after 7.1702ms - 200
+2026-02-07 09:03:01.864 +01:00 [INF] End processing HTTP request after 36.5017ms - 200
+2026-02-07 09:03:11.889 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:11.894 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:11.963 +01:00 [INF] HTTP GET /healthz responded 200 in 3.5296ms
+2026-02-07 09:03:11.963 +01:00 [INF] Received HTTP response headers after 63.523ms - 200
+2026-02-07 09:03:11.985 +01:00 [INF] End processing HTTP request after 95.4511ms - 200
+2026-02-07 09:03:22.005 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:22.011 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:22.020 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9519ms
+2026-02-07 09:03:22.026 +01:00 [INF] Received HTTP response headers after 9.276ms - 200
+2026-02-07 09:03:22.042 +01:00 [INF] End processing HTTP request after 36.4989ms - 200
+2026-02-07 09:03:32.066 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:32.070 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:32.100 +01:00 [INF] HTTP GET /healthz responded 200 in 14.4152ms
+2026-02-07 09:03:32.102 +01:00 [INF] Received HTTP response headers after 17.0985ms - 200
+2026-02-07 09:03:32.116 +01:00 [INF] End processing HTTP request after 49.6112ms - 200
+2026-02-07 09:03:42.132 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:42.136 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:42.149 +01:00 [INF] HTTP GET /healthz responded 200 in 3.9117ms
+2026-02-07 09:03:42.150 +01:00 [INF] Received HTTP response headers after 5.3938ms - 200
+2026-02-07 09:03:42.168 +01:00 [INF] End processing HTTP request after 36.8298ms - 200
+2026-02-07 09:03:52.189 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:52.193 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:03:52.205 +01:00 [INF] HTTP GET /healthz responded 200 in 4.1984ms
+2026-02-07 09:03:52.205 +01:00 [INF] Received HTTP response headers after 5.6686ms - 200
+2026-02-07 09:03:52.255 +01:00 [INF] End processing HTTP request after 66.1577ms - 200
+2026-02-07 09:04:02.283 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:02.290 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:02.302 +01:00 [INF] HTTP GET /healthz responded 200 in 4.0836ms
+2026-02-07 09:04:02.302 +01:00 [INF] Received HTTP response headers after 5.4634ms - 200
+2026-02-07 09:04:02.319 +01:00 [INF] End processing HTTP request after 36.2866ms - 200
+2026-02-07 09:04:12.344 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:12.347 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:12.362 +01:00 [INF] HTTP GET /healthz responded 200 in 8.3173ms
+2026-02-07 09:04:12.362 +01:00 [INF] Received HTTP response headers after 10.025ms - 200
+2026-02-07 09:04:12.376 +01:00 [INF] End processing HTTP request after 32.6559ms - 200
+2026-02-07 09:04:22.395 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:22.399 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:22.407 +01:00 [INF] HTTP GET /healthz responded 200 in 3.1746ms
+2026-02-07 09:04:22.407 +01:00 [INF] Received HTTP response headers after 4.3493ms - 200
+2026-02-07 09:04:22.416 +01:00 [INF] End processing HTTP request after 20.9477ms - 200
+2026-02-07 09:04:32.433 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:32.436 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:32.445 +01:00 [INF] HTTP GET /healthz responded 200 in 3.9291ms
+2026-02-07 09:04:32.445 +01:00 [INF] Received HTTP response headers after 6.2915ms - 200
+2026-02-07 09:04:32.453 +01:00 [INF] End processing HTTP request after 20.6891ms - 200
+2026-02-07 09:04:42.461 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:42.464 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:42.470 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7402ms
+2026-02-07 09:04:42.471 +01:00 [INF] Received HTTP response headers after 3.8109ms - 200
+2026-02-07 09:04:42.481 +01:00 [INF] End processing HTTP request after 20.3674ms - 200
+2026-02-07 09:04:52.509 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:52.513 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:04:52.520 +01:00 [INF] HTTP GET /healthz responded 200 in 3.1998ms
+2026-02-07 09:04:52.520 +01:00 [INF] Received HTTP response headers after 4.8614ms - 200
+2026-02-07 09:04:52.529 +01:00 [INF] End processing HTTP request after 19.65ms - 200
+2026-02-07 09:05:02.570 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:02.576 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:02.586 +01:00 [INF] HTTP GET /healthz responded 200 in 3.5893ms
+2026-02-07 09:05:02.586 +01:00 [INF] Received HTTP response headers after 5.5652ms - 200
+2026-02-07 09:05:02.595 +01:00 [INF] End processing HTTP request after 25.0777ms - 200
+2026-02-07 09:05:12.613 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:12.620 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:12.688 +01:00 [INF] HTTP GET /healthz responded 200 in 6.3955ms
+2026-02-07 09:05:12.688 +01:00 [INF] Received HTTP response headers after 59.6924ms - 200
+2026-02-07 09:05:12.695 +01:00 [INF] End processing HTTP request after 81.9532ms - 200
+2026-02-07 09:05:22.709 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:22.713 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:22.718 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0514ms
+2026-02-07 09:05:22.719 +01:00 [INF] Received HTTP response headers after 2.9163ms - 200
+2026-02-07 09:05:22.726 +01:00 [INF] End processing HTTP request after 17.1664ms - 200
+2026-02-07 09:05:32.732 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:32.739 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:32.786 +01:00 [INF] HTTP GET /healthz responded 200 in 3.4773ms
+2026-02-07 09:05:32.787 +01:00 [INF] Received HTTP response headers after 42.3363ms - 200
+2026-02-07 09:05:32.796 +01:00 [INF] End processing HTTP request after 64.6063ms - 200
+2026-02-07 09:05:42.810 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:42.814 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:42.820 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3861ms
+2026-02-07 09:05:42.821 +01:00 [INF] Received HTTP response headers after 3.2839ms - 200
+2026-02-07 09:05:42.831 +01:00 [INF] End processing HTTP request after 20.3723ms - 200
+2026-02-07 09:05:52.836 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:52.843 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:05:52.849 +01:00 [INF] HTTP GET /healthz responded 200 in 1.8085ms
+2026-02-07 09:05:52.850 +01:00 [INF] Received HTTP response headers after 2.3445ms - 200
+2026-02-07 09:05:52.860 +01:00 [INF] End processing HTTP request after 23.2647ms - 200
+2026-02-07 09:06:02.881 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:02.890 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:02.906 +01:00 [INF] HTTP GET /healthz responded 200 in 3.4831ms
+2026-02-07 09:06:02.909 +01:00 [INF] Received HTTP response headers after 6.6866ms - 200
+2026-02-07 09:06:02.920 +01:00 [INF] End processing HTTP request after 39.3121ms - 200
+2026-02-07 09:06:12.961 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:12.965 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:12.981 +01:00 [INF] HTTP GET /healthz responded 200 in 13.2203ms
+2026-02-07 09:06:12.984 +01:00 [INF] Received HTTP response headers after 16.6051ms - 200
+2026-02-07 09:06:12.995 +01:00 [INF] End processing HTTP request after 34.3264ms - 200
+2026-02-07 09:06:23.000 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:23.002 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:23.007 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3678ms
+2026-02-07 09:06:23.007 +01:00 [INF] Received HTTP response headers after 3.2694ms - 200
+2026-02-07 09:06:23.012 +01:00 [INF] End processing HTTP request after 12.0708ms - 200
+2026-02-07 09:06:33.027 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:33.029 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:33.045 +01:00 [INF] HTTP GET /healthz responded 200 in 9.8587ms
+2026-02-07 09:06:33.045 +01:00 [INF] Received HTTP response headers after 12.6842ms - 200
+2026-02-07 09:06:33.053 +01:00 [INF] End processing HTTP request after 26.5879ms - 200
+2026-02-07 09:06:43.064 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:43.075 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:43.085 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7468ms
+2026-02-07 09:06:43.085 +01:00 [INF] Received HTTP response headers after 3.8851ms - 200
+2026-02-07 09:06:43.090 +01:00 [INF] End processing HTTP request after 25.8974ms - 200
+2026-02-07 09:06:53.107 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:53.115 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:06:53.154 +01:00 [INF] HTTP GET /healthz responded 200 in 7.6281ms
+2026-02-07 09:06:53.155 +01:00 [INF] Received HTTP response headers after 8.6184ms - 200
+2026-02-07 09:06:53.160 +01:00 [INF] End processing HTTP request after 53.0684ms - 200
+2026-02-07 09:07:03.162 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:03.166 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:03.172 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4189ms
+2026-02-07 09:07:03.173 +01:00 [INF] Received HTTP response headers after 4.264ms - 200
+2026-02-07 09:07:03.179 +01:00 [INF] End processing HTTP request after 16.8833ms - 200
+2026-02-07 09:07:13.213 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:13.298 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:13.336 +01:00 [INF] HTTP GET /healthz responded 200 in 3.8531ms
+2026-02-07 09:07:13.337 +01:00 [INF] Received HTTP response headers after 32.3353ms - 200
+2026-02-07 09:07:13.355 +01:00 [INF] End processing HTTP request after 141.5977ms - 200
+2026-02-07 09:07:23.372 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:23.375 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:23.383 +01:00 [INF] HTTP GET /healthz responded 200 in 3.0499ms
+2026-02-07 09:07:23.383 +01:00 [INF] Received HTTP response headers after 5.2447ms - 200
+2026-02-07 09:07:23.392 +01:00 [INF] End processing HTTP request after 19.7458ms - 200
+2026-02-07 09:07:33.403 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:33.407 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:33.413 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6685ms
+2026-02-07 09:07:33.414 +01:00 [INF] Received HTTP response headers after 3.5613ms - 200
+2026-02-07 09:07:33.423 +01:00 [INF] End processing HTTP request after 19.8604ms - 200
+2026-02-07 09:07:43.434 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:43.438 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:43.447 +01:00 [INF] HTTP GET /healthz responded 200 in 4.0502ms
+2026-02-07 09:07:43.447 +01:00 [INF] Received HTTP response headers after 4.8677ms - 200
+2026-02-07 09:07:43.458 +01:00 [INF] End processing HTTP request after 23.4294ms - 200
+2026-02-07 09:07:53.466 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:53.470 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:07:53.478 +01:00 [INF] HTTP GET /healthz responded 200 in 4.5935ms
+2026-02-07 09:07:53.479 +01:00 [INF] Received HTTP response headers after 6.3979ms - 200
+2026-02-07 09:07:53.486 +01:00 [INF] End processing HTTP request after 19.3054ms - 200
+2026-02-07 09:08:03.495 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:03.500 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:03.509 +01:00 [INF] HTTP GET /healthz responded 200 in 3.5327ms
+2026-02-07 09:08:03.512 +01:00 [INF] Received HTTP response headers after 7.4966ms - 200
+2026-02-07 09:08:03.529 +01:00 [INF] End processing HTTP request after 34.098ms - 200
+2026-02-07 09:08:13.548 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:13.557 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:13.565 +01:00 [INF] HTTP GET /healthz responded 200 in 3.6176ms
+2026-02-07 09:08:13.566 +01:00 [INF] Received HTTP response headers after 4.5683ms - 200
+2026-02-07 09:08:13.577 +01:00 [INF] End processing HTTP request after 29.3835ms - 200
+2026-02-07 09:08:23.603 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:23.608 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:23.615 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5059ms
+2026-02-07 09:08:23.615 +01:00 [INF] Received HTTP response headers after 3.2496ms - 200
+2026-02-07 09:08:23.624 +01:00 [INF] End processing HTTP request after 20.8712ms - 200
+2026-02-07 09:08:33.642 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:33.648 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:33.654 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7746ms
+2026-02-07 09:08:33.655 +01:00 [INF] Received HTTP response headers after 4.6055ms - 200
+2026-02-07 09:08:33.662 +01:00 [INF] End processing HTTP request after 20.3855ms - 200
+2026-02-07 09:08:43.680 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:43.683 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:43.690 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7600ms
+2026-02-07 09:08:43.690 +01:00 [INF] Received HTTP response headers after 4.3194ms - 200
+2026-02-07 09:08:43.698 +01:00 [INF] End processing HTTP request after 18.0489ms - 200
+2026-02-07 09:08:53.713 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:53.716 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:08:53.724 +01:00 [INF] HTTP GET /healthz responded 200 in 3.0167ms
+2026-02-07 09:08:53.724 +01:00 [INF] Received HTTP response headers after 4.1295ms - 200
+2026-02-07 09:08:53.731 +01:00 [INF] End processing HTTP request after 18.6055ms - 200
+2026-02-07 09:09:03.742 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:03.744 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:03.751 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8582ms
+2026-02-07 09:09:03.751 +01:00 [INF] Received HTTP response headers after 4.7967ms - 200
+2026-02-07 09:09:03.761 +01:00 [INF] End processing HTTP request after 18.7017ms - 200
+2026-02-07 09:09:13.782 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:13.785 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:13.835 +01:00 [INF] HTTP GET /healthz responded 200 in 6.0962ms
+2026-02-07 09:09:13.836 +01:00 [INF] Received HTTP response headers after 46.6388ms - 200
+2026-02-07 09:09:13.847 +01:00 [INF] End processing HTTP request after 65.2306ms - 200
+2026-02-07 09:09:23.859 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:23.863 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:23.869 +01:00 [INF] HTTP GET /healthz responded 200 in 3.0034ms
+2026-02-07 09:09:23.869 +01:00 [INF] Received HTTP response headers after 4.0393ms - 200
+2026-02-07 09:09:23.878 +01:00 [INF] End processing HTTP request after 18.9277ms - 200
+2026-02-07 09:09:33.889 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:33.892 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:33.898 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5415ms
+2026-02-07 09:09:33.899 +01:00 [INF] Received HTTP response headers after 3.974ms - 200
+2026-02-07 09:09:33.909 +01:00 [INF] End processing HTTP request after 19.3432ms - 200
+2026-02-07 09:09:43.955 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:43.996 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:44.004 +01:00 [INF] HTTP GET /healthz responded 200 in 3.4492ms
+2026-02-07 09:09:44.005 +01:00 [INF] Received HTTP response headers after 4.1125ms - 200
+2026-02-07 09:09:44.011 +01:00 [INF] End processing HTTP request after 56.0036ms - 200
+2026-02-07 09:09:54.023 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:54.025 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:09:54.031 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8678ms
+2026-02-07 09:09:54.031 +01:00 [INF] Received HTTP response headers after 3.8286ms - 200
+2026-02-07 09:09:54.036 +01:00 [INF] End processing HTTP request after 13.229ms - 200
+2026-02-07 09:10:04.045 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:04.051 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:04.060 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2356ms
+2026-02-07 09:10:04.061 +01:00 [INF] Received HTTP response headers after 4.3222ms - 200
+2026-02-07 09:10:04.081 +01:00 [INF] End processing HTTP request after 35.3402ms - 200
+2026-02-07 09:10:14.092 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:14.098 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:14.105 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2684ms
+2026-02-07 09:10:14.105 +01:00 [INF] Received HTTP response headers after 3.2006ms - 200
+2026-02-07 09:10:14.114 +01:00 [INF] End processing HTTP request after 21.1305ms - 200
+2026-02-07 09:10:24.136 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:24.139 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:24.144 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9580ms
+2026-02-07 09:10:24.144 +01:00 [INF] Received HTTP response headers after 3.3108ms - 200
+2026-02-07 09:10:24.172 +01:00 [INF] End processing HTTP request after 35.8574ms - 200
+2026-02-07 09:10:34.190 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:34.192 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:34.198 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2423ms
+2026-02-07 09:10:34.199 +01:00 [INF] Received HTTP response headers after 4.1584ms - 200
+2026-02-07 09:10:34.205 +01:00 [INF] End processing HTTP request after 15.5249ms - 200
+2026-02-07 09:10:44.224 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:44.227 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:44.233 +01:00 [INF] HTTP GET /healthz responded 200 in 3.6172ms
+2026-02-07 09:10:44.234 +01:00 [INF] Received HTTP response headers after 4.7616ms - 200
+2026-02-07 09:10:44.241 +01:00 [INF] End processing HTTP request after 16.8772ms - 200
+2026-02-07 09:10:54.250 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:54.258 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:10:54.269 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7338ms
+2026-02-07 09:10:54.270 +01:00 [INF] Received HTTP response headers after 7.6454ms - 200
+2026-02-07 09:10:54.277 +01:00 [INF] End processing HTTP request after 26.6258ms - 200
+2026-02-07 09:11:04.286 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:04.294 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:04.318 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9004ms
+2026-02-07 09:11:04.320 +01:00 [INF] Received HTTP response headers after 7.8404ms - 200
+2026-02-07 09:11:04.342 +01:00 [INF] End processing HTTP request after 56.6303ms - 200
+2026-02-07 09:11:14.375 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:14.399 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:14.440 +01:00 [INF] HTTP GET /healthz responded 200 in 8.7087ms
+2026-02-07 09:11:14.441 +01:00 [INF] Received HTTP response headers after 37.603ms - 200
+2026-02-07 09:11:14.458 +01:00 [INF] End processing HTTP request after 82.7573ms - 200
+2026-02-07 09:11:24.477 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:24.498 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:24.505 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0767ms
+2026-02-07 09:11:24.505 +01:00 [INF] Received HTTP response headers after 2.8877ms - 200
+2026-02-07 09:11:24.530 +01:00 [INF] End processing HTTP request after 52.7003ms - 200
+2026-02-07 09:11:34.551 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:34.555 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:34.563 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4249ms
+2026-02-07 09:11:34.563 +01:00 [INF] Received HTTP response headers after 3.5959ms - 200
+2026-02-07 09:11:34.577 +01:00 [INF] End processing HTTP request after 26.4283ms - 200
+2026-02-07 09:11:44.593 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:44.596 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:44.604 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2952ms
+2026-02-07 09:11:44.604 +01:00 [INF] Received HTTP response headers after 4.5069ms - 200
+2026-02-07 09:11:44.612 +01:00 [INF] End processing HTTP request after 18.4306ms - 200
+2026-02-07 09:11:54.627 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:54.631 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:11:54.637 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0003ms
+2026-02-07 09:11:54.637 +01:00 [INF] Received HTTP response headers after 2.83ms - 200
+2026-02-07 09:11:54.649 +01:00 [INF] End processing HTTP request after 22.0488ms - 200
+2026-02-07 09:12:04.662 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:04.674 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:04.679 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9179ms
+2026-02-07 09:12:04.679 +01:00 [INF] Received HTTP response headers after 2.6053ms - 200
+2026-02-07 09:12:04.690 +01:00 [INF] End processing HTTP request after 27.3081ms - 200
+2026-02-07 09:12:14.696 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:14.701 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:14.707 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3425ms
+2026-02-07 09:12:14.708 +01:00 [INF] Received HTTP response headers after 3.1658ms - 200
+2026-02-07 09:12:14.731 +01:00 [INF] End processing HTTP request after 34.8505ms - 200
+2026-02-07 09:12:24.743 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:24.748 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:24.756 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3127ms
+2026-02-07 09:12:24.756 +01:00 [INF] Received HTTP response headers after 3.4319ms - 200
+2026-02-07 09:12:24.764 +01:00 [INF] End processing HTTP request after 20.8179ms - 200
+2026-02-07 09:12:34.791 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:34.801 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:34.810 +01:00 [INF] HTTP GET /healthz responded 200 in 3.9227ms
+2026-02-07 09:12:34.810 +01:00 [INF] Received HTTP response headers after 5.4588ms - 200
+2026-02-07 09:12:34.821 +01:00 [INF] End processing HTTP request after 30.0494ms - 200
+2026-02-07 09:12:44.854 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:44.860 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:44.870 +01:00 [INF] HTTP GET /healthz responded 200 in 4.5845ms
+2026-02-07 09:12:44.870 +01:00 [INF] Received HTTP response headers after 5.6537ms - 200
+2026-02-07 09:12:44.886 +01:00 [INF] End processing HTTP request after 31.7166ms - 200
+2026-02-07 09:12:54.908 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:54.915 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:12:54.923 +01:00 [INF] HTTP GET /healthz responded 200 in 3.3330ms
+2026-02-07 09:12:54.923 +01:00 [INF] Received HTTP response headers after 4.8874ms - 200
+2026-02-07 09:12:54.938 +01:00 [INF] End processing HTTP request after 30.0711ms - 200
+2026-02-07 09:13:04.945 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:04.952 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:04.964 +01:00 [INF] HTTP GET /healthz responded 200 in 3.6915ms
+2026-02-07 09:13:04.964 +01:00 [INF] Received HTTP response headers after 7.1178ms - 200
+2026-02-07 09:13:04.976 +01:00 [INF] End processing HTTP request after 31.8307ms - 200
+2026-02-07 09:13:14.990 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:14.995 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:15.041 +01:00 [INF] HTTP GET /healthz responded 200 in 14.7345ms
+2026-02-07 09:13:15.042 +01:00 [INF] Received HTTP response headers after 40.5347ms - 200
+2026-02-07 09:13:15.048 +01:00 [INF] End processing HTTP request after 57.7986ms - 200
+2026-02-07 09:13:25.093 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:25.096 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:25.105 +01:00 [INF] HTTP GET /healthz responded 200 in 4.7105ms
+2026-02-07 09:13:25.105 +01:00 [INF] Received HTTP response headers after 5.4996ms - 200
+2026-02-07 09:13:25.115 +01:00 [INF] End processing HTTP request after 21.865ms - 200
+2026-02-07 09:13:35.132 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:35.135 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:35.140 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0359ms
+2026-02-07 09:13:35.140 +01:00 [INF] Received HTTP response headers after 2.9073ms - 200
+2026-02-07 09:13:35.145 +01:00 [INF] End processing HTTP request after 12.9892ms - 200
+2026-02-07 09:13:45.169 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:45.175 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:45.181 +01:00 [INF] HTTP GET /healthz responded 200 in 2.1456ms
+2026-02-07 09:13:45.181 +01:00 [INF] Received HTTP response headers after 3.1378ms - 200
+2026-02-07 09:13:45.196 +01:00 [INF] End processing HTTP request after 26.2458ms - 200
+2026-02-07 09:13:55.217 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:55.220 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:13:55.225 +01:00 [INF] HTTP GET /healthz responded 200 in 1.8003ms
+2026-02-07 09:13:55.226 +01:00 [INF] Received HTTP response headers after 2.4225ms - 200
+2026-02-07 09:13:55.232 +01:00 [INF] End processing HTTP request after 14.2731ms - 200
+2026-02-07 09:14:50.435 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:14:50.439 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:14:50.445 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6937ms
+2026-02-07 09:14:50.446 +01:00 [INF] Received HTTP response headers after 3.58ms - 200
+2026-02-07 09:14:50.461 +01:00 [INF] End processing HTTP request after 26.1517ms - 200
+2026-02-07 09:15:00.485 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:00.490 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:00.504 +01:00 [INF] HTTP GET /healthz responded 200 in 4.9160ms
+2026-02-07 09:15:00.504 +01:00 [INF] Received HTTP response headers after 7.2244ms - 200
+2026-02-07 09:15:00.517 +01:00 [INF] End processing HTTP request after 31.7766ms - 200
+2026-02-07 09:15:10.533 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:10.536 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:10.545 +01:00 [INF] HTTP GET /healthz responded 200 in 3.7844ms
+2026-02-07 09:15:10.545 +01:00 [INF] Received HTTP response headers after 5.8321ms - 200
+2026-02-07 09:15:10.550 +01:00 [INF] End processing HTTP request after 17.7495ms - 200
+2026-02-07 09:15:20.558 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:20.563 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:20.570 +01:00 [INF] HTTP GET /healthz responded 200 in 3.1507ms
+2026-02-07 09:15:20.571 +01:00 [INF] Received HTTP response headers after 4.0846ms - 200
+2026-02-07 09:15:20.596 +01:00 [INF] End processing HTTP request after 37.3715ms - 200
+2026-02-07 09:15:30.605 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:30.611 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:30.621 +01:00 [INF] HTTP GET /healthz responded 200 in 3.5352ms
+2026-02-07 09:15:30.622 +01:00 [INF] Received HTTP response headers after 4.6374ms - 200
+2026-02-07 09:15:30.635 +01:00 [INF] End processing HTTP request after 30.6077ms - 200
+2026-02-07 09:15:40.664 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:40.856 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:40.907 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8921ms
+2026-02-07 09:15:40.908 +01:00 [INF] Received HTTP response headers after 5.0958ms - 200
+2026-02-07 09:15:40.920 +01:00 [INF] End processing HTTP request after 256.3751ms - 200
+2026-02-07 09:15:50.928 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:50.932 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:15:50.939 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5045ms
+2026-02-07 09:15:50.939 +01:00 [INF] Received HTTP response headers after 3.6193ms - 200
+2026-02-07 09:15:50.953 +01:00 [INF] End processing HTTP request after 25.0507ms - 200
+2026-02-07 09:16:00.986 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:00.993 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:01.059 +01:00 [INF] HTTP GET /healthz responded 200 in 9.3780ms
+2026-02-07 09:16:01.065 +01:00 [INF] Received HTTP response headers after 62.2096ms - 200
+2026-02-07 09:16:01.085 +01:00 [INF] End processing HTTP request after 98.9143ms - 200
+2026-02-07 09:16:11.106 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:11.109 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:11.121 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7173ms
+2026-02-07 09:16:11.139 +01:00 [INF] Received HTTP response headers after 21.9667ms - 200
+2026-02-07 09:16:11.146 +01:00 [INF] End processing HTTP request after 39.9075ms - 200
+2026-02-07 09:16:21.153 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:21.164 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:21.174 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2509ms
+2026-02-07 09:16:21.175 +01:00 [INF] Received HTTP response headers after 4.5027ms - 200
+2026-02-07 09:16:21.191 +01:00 [INF] End processing HTTP request after 38.19ms - 200
+2026-02-07 09:16:31.217 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:31.220 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:31.225 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2431ms
+2026-02-07 09:16:31.225 +01:00 [INF] Received HTTP response headers after 2.9131ms - 200
+2026-02-07 09:16:31.232 +01:00 [INF] End processing HTTP request after 15.0569ms - 200
+2026-02-07 09:16:41.251 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:41.254 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:41.260 +01:00 [INF] HTTP GET /healthz responded 200 in 2.1928ms
+2026-02-07 09:16:41.261 +01:00 [INF] Received HTTP response headers after 3.0513ms - 200
+2026-02-07 09:16:41.268 +01:00 [INF] End processing HTTP request after 17.0154ms - 200
+2026-02-07 09:16:51.320 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:51.325 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:16:51.332 +01:00 [INF] HTTP GET /healthz responded 200 in 1.6755ms
+2026-02-07 09:16:51.332 +01:00 [INF] Received HTTP response headers after 2.6602ms - 200
+2026-02-07 09:16:51.339 +01:00 [INF] End processing HTTP request after 19.3883ms - 200
+2026-02-07 09:17:01.344 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:01.373 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:01.383 +01:00 [INF] HTTP GET /healthz responded 200 in 5.3808ms
+2026-02-07 09:17:01.383 +01:00 [INF] Received HTTP response headers after 6.7369ms - 200
+2026-02-07 09:17:01.405 +01:00 [INF] End processing HTTP request after 60.9974ms - 200
+2026-02-07 09:17:11.421 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:11.424 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:11.431 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4814ms
+2026-02-07 09:17:11.431 +01:00 [INF] Received HTTP response headers after 4.5617ms - 200
+2026-02-07 09:17:11.468 +01:00 [INF] End processing HTTP request after 47.445ms - 200
+2026-02-07 09:17:21.485 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:21.489 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:21.509 +01:00 [INF] HTTP GET /healthz responded 200 in 16.5243ms
+2026-02-07 09:17:21.509 +01:00 [INF] Received HTTP response headers after 17.474ms - 200
+2026-02-07 09:17:21.548 +01:00 [INF] End processing HTTP request after 63.3332ms - 200
+2026-02-07 09:17:31.563 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:31.568 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:31.581 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2603ms
+2026-02-07 09:17:31.581 +01:00 [INF] Received HTTP response headers after 4.0742ms - 200
+2026-02-07 09:17:31.595 +01:00 [INF] End processing HTTP request after 31.8612ms - 200
+2026-02-07 09:17:41.607 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:41.610 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:41.615 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9196ms
+2026-02-07 09:17:41.616 +01:00 [INF] Received HTTP response headers after 2.6844ms - 200
+2026-02-07 09:17:41.622 +01:00 [INF] End processing HTTP request after 15.3554ms - 200
+2026-02-07 09:17:51.636 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:51.643 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:17:51.653 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2094ms
+2026-02-07 09:17:51.653 +01:00 [INF] Received HTTP response headers after 2.8393ms - 200
+2026-02-07 09:17:51.732 +01:00 [INF] End processing HTTP request after 95.5764ms - 200
+2026-02-07 09:18:01.748 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:01.753 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:01.782 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4695ms
+2026-02-07 09:18:01.782 +01:00 [INF] Received HTTP response headers after 26.9023ms - 200
+2026-02-07 09:18:01.794 +01:00 [INF] End processing HTTP request after 45.2157ms - 200
+2026-02-07 09:18:11.801 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:11.803 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:11.807 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9615ms
+2026-02-07 09:18:11.807 +01:00 [INF] Received HTTP response headers after 2.8803ms - 200
+2026-02-07 09:18:11.811 +01:00 [INF] End processing HTTP request after 10.0315ms - 200
+2026-02-07 09:18:21.821 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:21.825 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:21.831 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4485ms
+2026-02-07 09:18:21.832 +01:00 [INF] Received HTTP response headers after 3.8201ms - 200
+2026-02-07 09:18:21.840 +01:00 [INF] End processing HTTP request after 18.8149ms - 200
+2026-02-07 09:18:31.853 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:31.856 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:31.861 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2564ms
+2026-02-07 09:18:31.862 +01:00 [INF] Received HTTP response headers after 3.3351ms - 200
+2026-02-07 09:18:31.869 +01:00 [INF] End processing HTTP request after 16.8481ms - 200
+2026-02-07 09:18:41.890 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:41.891 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:41.901 +01:00 [INF] HTTP GET /healthz responded 200 in 6.7129ms
+2026-02-07 09:18:41.901 +01:00 [INF] Received HTTP response headers after 7.6621ms - 200
+2026-02-07 09:18:41.912 +01:00 [INF] End processing HTTP request after 22.6164ms - 200
+2026-02-07 09:18:51.929 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:51.935 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:18:51.950 +01:00 [INF] HTTP GET /healthz responded 200 in 3.3359ms
+2026-02-07 09:18:51.950 +01:00 [INF] Received HTTP response headers after 4.2781ms - 200
+2026-02-07 09:18:51.971 +01:00 [INF] End processing HTTP request after 42.1888ms - 200
+2026-02-07 09:19:01.991 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:01.994 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:02.000 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3500ms
+2026-02-07 09:19:02.000 +01:00 [INF] Received HTTP response headers after 3.3602ms - 200
+2026-02-07 09:19:02.017 +01:00 [INF] End processing HTTP request after 26.4295ms - 200
+2026-02-07 09:19:12.032 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:12.035 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:12.041 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8690ms
+2026-02-07 09:19:12.042 +01:00 [INF] Received HTTP response headers after 4.6961ms - 200
+2026-02-07 09:19:12.054 +01:00 [INF] End processing HTTP request after 21.6646ms - 200
+2026-02-07 09:19:22.079 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:22.082 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:22.087 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2282ms
+2026-02-07 09:19:22.088 +01:00 [INF] Received HTTP response headers after 3.0852ms - 200
+2026-02-07 09:19:22.100 +01:00 [INF] End processing HTTP request after 20.9907ms - 200
+2026-02-07 09:19:32.121 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:32.125 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:32.135 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8462ms
+2026-02-07 09:19:32.136 +01:00 [INF] Received HTTP response headers after 4.2712ms - 200
+2026-02-07 09:19:32.154 +01:00 [INF] End processing HTTP request after 33.0414ms - 200
+2026-02-07 09:19:42.176 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:42.179 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:42.184 +01:00 [INF] HTTP GET /healthz responded 200 in 1.7832ms
+2026-02-07 09:19:42.184 +01:00 [INF] Received HTTP response headers after 2.5682ms - 200
+2026-02-07 09:19:42.197 +01:00 [INF] End processing HTTP request after 21.4252ms - 200
+2026-02-07 09:19:52.206 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:52.210 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:19:52.215 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9107ms
+2026-02-07 09:19:52.215 +01:00 [INF] Received HTTP response headers after 2.7905ms - 200
+2026-02-07 09:19:52.223 +01:00 [INF] End processing HTTP request after 16.6864ms - 200
+2026-02-07 09:20:02.228 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:02.236 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:02.274 +01:00 [INF] HTTP GET /healthz responded 200 in 3.0414ms
+2026-02-07 09:20:02.274 +01:00 [INF] Received HTTP response headers after 36.2311ms - 200
+2026-02-07 09:20:02.285 +01:00 [INF] End processing HTTP request after 56.7085ms - 200
+2026-02-07 09:20:12.298 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:12.302 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:12.307 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0320ms
+2026-02-07 09:20:12.308 +01:00 [INF] Received HTTP response headers after 3.0008ms - 200
+2026-02-07 09:20:12.316 +01:00 [INF] End processing HTTP request after 17.7432ms - 200
+2026-02-07 09:20:22.326 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:22.329 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:22.335 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8897ms
+2026-02-07 09:20:22.335 +01:00 [INF] Received HTTP response headers after 4.5513ms - 200
+2026-02-07 09:20:22.346 +01:00 [INF] End processing HTTP request after 19.6896ms - 200
+2026-02-07 09:20:32.365 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:32.370 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:32.376 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3209ms
+2026-02-07 09:20:32.377 +01:00 [INF] Received HTTP response headers after 3.1196ms - 200
+2026-02-07 09:20:32.389 +01:00 [INF] End processing HTTP request after 23.5317ms - 200
+2026-02-07 09:20:42.395 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:42.399 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:42.408 +01:00 [INF] HTTP GET /healthz responded 200 in 3.3315ms
+2026-02-07 09:20:42.408 +01:00 [INF] Received HTTP response headers after 4.3112ms - 200
+2026-02-07 09:20:42.427 +01:00 [INF] End processing HTTP request after 32.1502ms - 200
+2026-02-07 09:20:52.433 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:52.443 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:20:52.449 +01:00 [INF] HTTP GET /healthz responded 200 in 3.5750ms
+2026-02-07 09:20:52.450 +01:00 [INF] Received HTTP response headers after 4.4056ms - 200
+2026-02-07 09:20:52.455 +01:00 [INF] End processing HTTP request after 21.5535ms - 200
+2026-02-07 09:21:02.456 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:02.460 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:02.468 +01:00 [INF] HTTP GET /healthz responded 200 in 4.6527ms
+2026-02-07 09:21:02.468 +01:00 [INF] Received HTTP response headers after 5.6994ms - 200
+2026-02-07 09:21:02.493 +01:00 [INF] End processing HTTP request after 36.5949ms - 200
+2026-02-07 09:21:12.546 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:12.557 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:12.565 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5378ms
+2026-02-07 09:21:12.566 +01:00 [INF] Received HTTP response headers after 5.3579ms - 200
+2026-02-07 09:21:12.581 +01:00 [INF] End processing HTTP request after 34.7235ms - 200
+2026-02-07 09:21:22.608 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:22.614 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:22.619 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9354ms
+2026-02-07 09:21:22.619 +01:00 [INF] Received HTTP response headers after 2.6116ms - 200
+2026-02-07 09:21:22.624 +01:00 [INF] End processing HTTP request after 15.67ms - 200
+2026-02-07 09:21:32.636 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:32.650 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:32.662 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7260ms
+2026-02-07 09:21:32.663 +01:00 [INF] Received HTTP response headers after 4.0057ms - 200
+2026-02-07 09:21:32.684 +01:00 [INF] End processing HTTP request after 47.6052ms - 200
+2026-02-07 09:21:42.696 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:42.700 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:42.707 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6049ms
+2026-02-07 09:21:42.707 +01:00 [INF] Received HTTP response headers after 3.5357ms - 200
+2026-02-07 09:21:42.718 +01:00 [INF] End processing HTTP request after 22.1229ms - 200
+2026-02-07 09:21:52.737 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:52.740 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:21:52.752 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5807ms
+2026-02-07 09:21:52.752 +01:00 [INF] Received HTTP response headers after 3.3659ms - 200
+2026-02-07 09:21:52.767 +01:00 [INF] End processing HTTP request after 30.5905ms - 200
+2026-02-07 09:22:02.795 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:02.807 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:02.847 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2698ms
+2026-02-07 09:22:02.847 +01:00 [INF] Received HTTP response headers after 33.6072ms - 200
+2026-02-07 09:22:02.868 +01:00 [INF] End processing HTTP request after 73.6143ms - 200
+2026-02-07 09:22:12.879 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:12.882 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:12.889 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3463ms
+2026-02-07 09:22:12.889 +01:00 [INF] Received HTTP response headers after 3.6732ms - 200
+2026-02-07 09:22:12.896 +01:00 [INF] End processing HTTP request after 17.2834ms - 200
+2026-02-07 09:22:22.913 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:22.917 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:22.922 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2589ms
+2026-02-07 09:22:22.923 +01:00 [INF] Received HTTP response headers after 3.1033ms - 200
+2026-02-07 09:22:22.931 +01:00 [INF] End processing HTTP request after 17.9569ms - 200
+2026-02-07 09:22:32.954 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:32.961 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:32.968 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9605ms
+2026-02-07 09:22:32.969 +01:00 [INF] Received HTTP response headers after 2.6333ms - 200
+2026-02-07 09:22:32.981 +01:00 [INF] End processing HTTP request after 26.4303ms - 200
+2026-02-07 09:22:42.997 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:43.000 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:43.008 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2188ms
+2026-02-07 09:22:43.009 +01:00 [INF] Received HTTP response headers after 3.1058ms - 200
+2026-02-07 09:22:43.037 +01:00 [INF] End processing HTTP request after 39.8569ms - 200
+2026-02-07 09:22:53.081 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:53.085 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:22:53.092 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9550ms
+2026-02-07 09:22:53.092 +01:00 [INF] Received HTTP response headers after 3.9693ms - 200
+2026-02-07 09:22:53.100 +01:00 [INF] End processing HTTP request after 19.1964ms - 200
+2026-02-07 09:23:03.111 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:03.117 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:03.130 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6018ms
+2026-02-07 09:23:03.130 +01:00 [INF] Received HTTP response headers after 3.6645ms - 200
+2026-02-07 09:23:03.146 +01:00 [INF] End processing HTTP request after 35.0297ms - 200
+2026-02-07 09:23:13.163 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:13.167 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:13.182 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5350ms
+2026-02-07 09:23:13.182 +01:00 [INF] Received HTTP response headers after 5.4262ms - 200
+2026-02-07 09:23:13.206 +01:00 [INF] End processing HTTP request after 42.6846ms - 200
+2026-02-07 09:23:23.213 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:23.216 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:23.221 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6454ms
+2026-02-07 09:23:23.222 +01:00 [INF] Received HTTP response headers after 4.2706ms - 200
+2026-02-07 09:23:23.229 +01:00 [INF] End processing HTTP request after 15.7154ms - 200
+2026-02-07 09:23:33.246 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:33.249 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:33.255 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9778ms
+2026-02-07 09:23:33.255 +01:00 [INF] Received HTTP response headers after 2.6287ms - 200
+2026-02-07 09:23:33.263 +01:00 [INF] End processing HTTP request after 17.2023ms - 200
+2026-02-07 09:23:43.275 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:43.278 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:43.285 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6010ms
+2026-02-07 09:23:43.285 +01:00 [INF] Received HTTP response headers after 3.7824ms - 200
+2026-02-07 09:23:43.293 +01:00 [INF] End processing HTTP request after 17.7094ms - 200
+2026-02-07 09:23:53.297 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:53.300 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:23:53.305 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4390ms
+2026-02-07 09:23:53.305 +01:00 [INF] Received HTTP response headers after 3.0471ms - 200
+2026-02-07 09:23:53.313 +01:00 [INF] End processing HTTP request after 15.9352ms - 200
+2026-02-07 09:24:03.330 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:03.333 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:03.370 +01:00 [INF] HTTP GET /healthz responded 200 in 5.8570ms
+2026-02-07 09:24:03.370 +01:00 [INF] Received HTTP response headers after 33.9302ms - 200
+2026-02-07 09:24:03.375 +01:00 [INF] End processing HTTP request after 44.8669ms - 200
+2026-02-07 09:24:13.383 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:13.385 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:13.390 +01:00 [INF] HTTP GET /healthz responded 200 in 1.7699ms
+2026-02-07 09:24:13.390 +01:00 [INF] Received HTTP response headers after 2.576ms - 200
+2026-02-07 09:24:13.403 +01:00 [INF] End processing HTTP request after 20.5646ms - 200
+2026-02-07 09:24:23.423 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:23.428 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:23.435 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0199ms
+2026-02-07 09:24:23.435 +01:00 [INF] Received HTTP response headers after 2.9592ms - 200
+2026-02-07 09:24:23.442 +01:00 [INF] End processing HTTP request after 18.8713ms - 200
+2026-02-07 09:24:33.457 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:33.459 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:33.467 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7764ms
+2026-02-07 09:24:33.467 +01:00 [INF] Received HTTP response headers after 3.672ms - 200
+2026-02-07 09:24:33.475 +01:00 [INF] End processing HTTP request after 18.3569ms - 200
+2026-02-07 09:24:43.492 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:43.494 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:43.499 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0185ms
+2026-02-07 09:24:43.499 +01:00 [INF] Received HTTP response headers after 2.7378ms - 200
+2026-02-07 09:24:43.505 +01:00 [INF] End processing HTTP request after 13.3738ms - 200
+2026-02-07 09:24:53.520 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:53.528 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:24:53.538 +01:00 [INF] HTTP GET /healthz responded 200 in 4.6674ms
+2026-02-07 09:24:53.538 +01:00 [INF] Received HTTP response headers after 5.6134ms - 200
+2026-02-07 09:24:53.546 +01:00 [INF] End processing HTTP request after 26.0096ms - 200
+2026-02-07 09:25:03.581 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:03.586 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:03.598 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4964ms
+2026-02-07 09:25:03.598 +01:00 [INF] Received HTTP response headers after 3.3976ms - 200
+2026-02-07 09:25:03.616 +01:00 [INF] End processing HTTP request after 35.6406ms - 200
+2026-02-07 09:25:13.631 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:13.636 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:13.654 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8984ms
+2026-02-07 09:25:13.654 +01:00 [INF] Received HTTP response headers after 5.766ms - 200
+2026-02-07 09:25:13.666 +01:00 [INF] End processing HTTP request after 35.2053ms - 200
+2026-02-07 09:25:23.681 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:23.683 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:23.691 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2699ms
+2026-02-07 09:25:23.691 +01:00 [INF] Received HTTP response headers after 3.2321ms - 200
+2026-02-07 09:25:23.697 +01:00 [INF] End processing HTTP request after 15.8976ms - 200
+2026-02-07 09:25:33.705 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:33.710 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:33.725 +01:00 [INF] HTTP GET /healthz responded 200 in 1.9738ms
+2026-02-07 09:25:33.725 +01:00 [INF] Received HTTP response headers after 2.9126ms - 200
+2026-02-07 09:25:33.733 +01:00 [INF] End processing HTTP request after 27.8094ms - 200
+2026-02-07 09:25:43.745 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:43.748 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:43.753 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3090ms
+2026-02-07 09:25:43.754 +01:00 [INF] Received HTTP response headers after 3.2944ms - 200
+2026-02-07 09:25:43.761 +01:00 [INF] End processing HTTP request after 16.5326ms - 200
+2026-02-07 09:25:53.822 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:53.826 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:25:53.834 +01:00 [INF] HTTP GET /healthz responded 200 in 3.0353ms
+2026-02-07 09:25:53.834 +01:00 [INF] Received HTTP response headers after 3.9767ms - 200
+2026-02-07 09:25:53.848 +01:00 [INF] End processing HTTP request after 26.085ms - 200
+2026-02-07 09:26:03.874 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:03.877 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:03.916 +01:00 [INF] HTTP GET /healthz responded 200 in 7.9190ms
+2026-02-07 09:26:03.916 +01:00 [INF] Received HTTP response headers after 37.2532ms - 200
+2026-02-07 09:26:03.942 +01:00 [INF] End processing HTTP request after 68.4205ms - 200
+2026-02-07 09:26:13.950 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:13.953 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:14.014 +01:00 [INF] Received HTTP response headers after 58.1393ms - 200
+2026-02-07 09:26:14.021 +01:00 [INF] End processing HTTP request after 71.2518ms - 200
+2026-02-07 09:26:14.014 +01:00 [INF] HTTP GET /healthz responded 200 in 3.1887ms
+2026-02-07 09:26:24.054 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:24.062 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:24.073 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0585ms
+2026-02-07 09:26:24.073 +01:00 [INF] Received HTTP response headers after 3.5672ms - 200
+2026-02-07 09:26:24.087 +01:00 [INF] End processing HTTP request after 32.4589ms - 200
+2026-02-07 09:26:34.104 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:34.110 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:34.117 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5072ms
+2026-02-07 09:26:34.117 +01:00 [INF] Received HTTP response headers after 3.6248ms - 200
+2026-02-07 09:26:34.122 +01:00 [INF] End processing HTTP request after 18.1313ms - 200
+2026-02-07 09:26:44.136 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:44.140 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:44.147 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9690ms
+2026-02-07 09:26:44.147 +01:00 [INF] Received HTTP response headers after 4.1793ms - 200
+2026-02-07 09:26:44.198 +01:00 [INF] End processing HTTP request after 62.3555ms - 200
+2026-02-07 09:26:54.210 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:54.214 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:26:54.219 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5822ms
+2026-02-07 09:26:54.219 +01:00 [INF] Received HTTP response headers after 3.6018ms - 200
+2026-02-07 09:26:54.228 +01:00 [INF] End processing HTTP request after 18.0331ms - 200
+2026-02-07 09:27:04.232 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:04.235 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:04.241 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9808ms
+2026-02-07 09:27:04.242 +01:00 [INF] Received HTTP response headers after 4.9676ms - 200
+2026-02-07 09:27:04.246 +01:00 [INF] End processing HTTP request after 13.8054ms - 200
+2026-02-07 09:27:14.258 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:14.264 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:14.269 +01:00 [INF] HTTP GET /healthz responded 200 in 1.8769ms
+2026-02-07 09:27:14.269 +01:00 [INF] Received HTTP response headers after 4.0215ms - 200
+2026-02-07 09:27:14.276 +01:00 [INF] End processing HTTP request after 17.7607ms - 200
+2026-02-07 09:27:24.291 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:24.300 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:24.311 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8965ms
+2026-02-07 09:27:24.311 +01:00 [INF] Received HTTP response headers after 3.6352ms - 200
+2026-02-07 09:27:24.332 +01:00 [INF] End processing HTTP request after 40.463ms - 200
+2026-02-07 09:27:34.344 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:34.352 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:34.365 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2074ms
+2026-02-07 09:27:34.365 +01:00 [INF] Received HTTP response headers after 3.2294ms - 200
+2026-02-07 09:27:34.376 +01:00 [INF] End processing HTTP request after 31.9467ms - 200
+2026-02-07 09:27:44.394 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:44.397 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:44.407 +01:00 [INF] HTTP GET /healthz responded 200 in 1.8611ms
+2026-02-07 09:27:44.407 +01:00 [INF] Received HTTP response headers after 2.6741ms - 200
+2026-02-07 09:27:44.418 +01:00 [INF] End processing HTTP request after 23.4849ms - 200
+2026-02-07 09:27:54.444 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:54.467 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:27:54.475 +01:00 [INF] HTTP GET /healthz responded 200 in 3.8636ms
+2026-02-07 09:27:54.476 +01:00 [INF] Received HTTP response headers after 4.9512ms - 200
+2026-02-07 09:27:54.490 +01:00 [INF] End processing HTTP request after 45.9028ms - 200
+2026-02-07 09:28:04.506 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:04.533 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:04.591 +01:00 [INF] HTTP GET /healthz responded 200 in 29.3688ms
+2026-02-07 09:28:04.591 +01:00 [INF] Received HTTP response headers after 53.9707ms - 200
+2026-02-07 09:28:04.603 +01:00 [INF] End processing HTTP request after 96.3764ms - 200
+2026-02-07 09:28:14.617 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:14.624 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:14.630 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4228ms
+2026-02-07 09:28:14.630 +01:00 [INF] Received HTTP response headers after 3.3045ms - 200
+2026-02-07 09:28:14.638 +01:00 [INF] End processing HTTP request after 21.6259ms - 200
+2026-02-07 09:28:24.646 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:24.651 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:24.659 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3411ms
+2026-02-07 09:28:24.659 +01:00 [INF] Received HTTP response headers after 3.3471ms - 200
+2026-02-07 09:28:24.666 +01:00 [INF] End processing HTTP request after 19.6918ms - 200
+2026-02-07 09:28:34.678 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:34.685 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:34.694 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7824ms
+2026-02-07 09:28:34.694 +01:00 [INF] Received HTTP response headers after 4.2379ms - 200
+2026-02-07 09:28:34.706 +01:00 [INF] End processing HTTP request after 28.4189ms - 200
+2026-02-07 09:28:44.717 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:44.720 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:44.734 +01:00 [INF] HTTP GET /healthz responded 200 in 10.5404ms
+2026-02-07 09:28:44.734 +01:00 [INF] Received HTTP response headers after 11.4156ms - 200
+2026-02-07 09:28:44.746 +01:00 [INF] End processing HTTP request after 28.0378ms - 200
+2026-02-07 09:28:54.764 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:54.767 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:28:54.775 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3221ms
+2026-02-07 09:28:54.775 +01:00 [INF] Received HTTP response headers after 3.1559ms - 200
+2026-02-07 09:28:54.783 +01:00 [INF] End processing HTTP request after 18.7937ms - 200
+2026-02-07 09:29:04.787 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:04.791 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:04.799 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4536ms
+2026-02-07 09:29:04.799 +01:00 [INF] Received HTTP response headers after 3.3284ms - 200
+2026-02-07 09:29:04.814 +01:00 [INF] End processing HTTP request after 27.048ms - 200
+2026-02-07 09:29:14.826 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:14.829 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:14.836 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0513ms
+2026-02-07 09:29:14.836 +01:00 [INF] Received HTTP response headers after 3.6347ms - 200
+2026-02-07 09:29:14.843 +01:00 [INF] End processing HTTP request after 16.7283ms - 200
+2026-02-07 09:29:24.858 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:24.863 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:24.876 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2101ms
+2026-02-07 09:29:24.876 +01:00 [INF] Received HTTP response headers after 3.7881ms - 200
+2026-02-07 09:29:24.908 +01:00 [INF] End processing HTTP request after 49.5249ms - 200
+2026-02-07 09:29:34.927 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:34.934 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:34.951 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2335ms
+2026-02-07 09:29:34.952 +01:00 [INF] Received HTTP response headers after 5.2699ms - 200
+2026-02-07 09:29:34.964 +01:00 [INF] End processing HTTP request after 36.5489ms - 200
+2026-02-07 09:29:44.980 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:44.983 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:44.990 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4224ms
+2026-02-07 09:29:44.990 +01:00 [INF] Received HTTP response headers after 3.7364ms - 200
+2026-02-07 09:29:44.999 +01:00 [INF] End processing HTTP request after 19.3625ms - 200
+2026-02-07 09:29:55.044 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:55.052 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-07 09:29:55.056 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2602ms
+2026-02-07 09:29:55.057 +01:00 [INF] Received HTTP response headers after 3.0212ms - 200
+2026-02-07 09:29:55.063 +01:00 [INF] End processing HTTP request after 19.1239ms - 200

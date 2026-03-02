@@ -1,0 +1,393 @@
+2026-02-05 15:30:27.812 +01:00 [INF] Starting Hotel Listing API
+2026-02-05 15:30:32.514 +01:00 [INF] Hotel Listing API started successfully
+2026-02-05 15:30:32.888 +01:00 [INF] Initializing UI Database
+2026-02-05 15:30:35.126 +01:00 [INF] Saving healthchecks configuration to database
+2026-02-05 15:30:36.131 +01:00 [INF] Now listening on: https://localhost:7233
+2026-02-05 15:30:36.140 +01:00 [INF] Now listening on: http://localhost:5107
+2026-02-05 15:30:40.160 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:30:40.174 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:30:40.194 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-05 15:30:40.197 +01:00 [INF] Hosting environment: Development
+2026-02-05 15:30:40.201 +01:00 [INF] Content root path: C:\Users\adeoy\source\repos\HotelListing.Api\HotelListing.Api
+2026-02-05 15:30:40.919 +01:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 63.3113ms
+2026-02-05 15:30:41.799 +01:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-02-05 15:30:41.966 +01:00 [WRN] No store type was specified for the decimal property 'TotalPrice' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-05 15:30:41.970 +01:00 [WRN] No store type was specified for the decimal property 'PerNightRate' on entity type 'Hotel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-05 15:30:46.360 +01:00 [INF] HTTP GET /healthz responded 200 in 5972.8947ms
+2026-02-05 15:30:46.370 +01:00 [INF] Received HTTP response headers after 6182.9596ms - 200
+2026-02-05 15:30:46.374 +01:00 [INF] End processing HTTP request after 6226.4948ms - 200
+2026-02-05 15:30:57.103 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:30:57.114 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:30:57.172 +01:00 [INF] HTTP GET /healthz responded 200 in 52.1903ms
+2026-02-05 15:30:57.174 +01:00 [INF] Received HTTP response headers after 56.5272ms - 200
+2026-02-05 15:30:57.186 +01:00 [INF] End processing HTTP request after 83.8318ms - 200
+2026-02-05 15:31:07.340 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:07.348 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:07.375 +01:00 [INF] HTTP GET /healthz responded 200 in 22.6111ms
+2026-02-05 15:31:07.376 +01:00 [INF] Received HTTP response headers after 25.4134ms - 200
+2026-02-05 15:31:07.386 +01:00 [INF] End processing HTTP request after 46.0315ms - 200
+2026-02-05 15:31:17.402 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:17.405 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:17.415 +01:00 [INF] HTTP GET /healthz responded 200 in 4.2250ms
+2026-02-05 15:31:17.416 +01:00 [INF] Received HTTP response headers after 6.0551ms - 200
+2026-02-05 15:31:17.424 +01:00 [INF] End processing HTTP request after 21.3469ms - 200
+2026-02-05 15:31:27.432 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:27.438 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:27.451 +01:00 [INF] HTTP GET /healthz responded 200 in 4.1257ms
+2026-02-05 15:31:27.451 +01:00 [INF] Received HTTP response headers after 5.9621ms - 200
+2026-02-05 15:31:27.460 +01:00 [INF] End processing HTTP request after 27.5686ms - 200
+2026-02-05 15:31:37.482 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:37.486 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:37.500 +01:00 [INF] HTTP GET /healthz responded 200 in 6.9916ms
+2026-02-05 15:31:37.502 +01:00 [INF] Received HTTP response headers after 10.2524ms - 200
+2026-02-05 15:31:37.511 +01:00 [INF] End processing HTTP request after 29.5662ms - 200
+2026-02-05 15:31:47.525 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:47.531 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:47.547 +01:00 [INF] HTTP GET /healthz responded 200 in 10.7270ms
+2026-02-05 15:31:47.547 +01:00 [INF] Received HTTP response headers after 13.2717ms - 200
+2026-02-05 15:31:47.563 +01:00 [INF] End processing HTTP request after 37.8135ms - 200
+2026-02-05 15:31:57.577 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:57.598 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:31:57.614 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2032ms
+2026-02-05 15:31:57.614 +01:00 [INF] Received HTTP response headers after 4.7294ms - 200
+2026-02-05 15:31:57.639 +01:00 [INF] End processing HTTP request after 62.43ms - 200
+2026-02-05 15:32:07.664 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:07.669 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:07.701 +01:00 [INF] HTTP GET /healthz responded 200 in 26.3818ms
+2026-02-05 15:32:07.702 +01:00 [INF] Received HTTP response headers after 30.1163ms - 200
+2026-02-05 15:32:07.712 +01:00 [INF] End processing HTTP request after 47.1255ms - 200
+2026-02-05 15:32:17.730 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:17.735 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:17.753 +01:00 [INF] HTTP GET /healthz responded 200 in 10.9535ms
+2026-02-05 15:32:17.754 +01:00 [INF] Received HTTP response headers after 12.847ms - 200
+2026-02-05 15:32:17.763 +01:00 [INF] End processing HTTP request after 32.9507ms - 200
+2026-02-05 15:32:27.789 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:27.795 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:27.802 +01:00 [INF] HTTP GET /healthz responded 200 in 4.0494ms
+2026-02-05 15:32:27.803 +01:00 [INF] Received HTTP response headers after 6.2245ms - 200
+2026-02-05 15:32:27.814 +01:00 [INF] End processing HTTP request after 25.5865ms - 200
+2026-02-05 15:32:37.831 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:37.837 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:37.852 +01:00 [INF] HTTP GET /healthz responded 200 in 7.3675ms
+2026-02-05 15:32:37.853 +01:00 [INF] Received HTTP response headers after 10.9153ms - 200
+2026-02-05 15:32:37.881 +01:00 [INF] End processing HTTP request after 49.4498ms - 200
+2026-02-05 15:32:47.904 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:47.909 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:48.007 +01:00 [INF] HTTP GET /healthz responded 200 in 3.7847ms
+2026-02-05 15:32:48.007 +01:00 [INF] Received HTTP response headers after 94.7087ms - 200
+2026-02-05 15:32:48.015 +01:00 [INF] End processing HTTP request after 111.256ms - 200
+2026-02-05 15:32:58.025 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:58.050 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:32:58.065 +01:00 [INF] HTTP GET /healthz responded 200 in 3.9974ms
+2026-02-05 15:32:58.065 +01:00 [INF] Received HTTP response headers after 5.8605ms - 200
+2026-02-05 15:32:58.074 +01:00 [INF] End processing HTTP request after 49.4525ms - 200
+2026-02-05 15:33:08.093 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:08.097 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:08.108 +01:00 [INF] HTTP GET /healthz responded 200 in 6.3324ms
+2026-02-05 15:33:08.108 +01:00 [INF] Received HTTP response headers after 8.1158ms - 200
+2026-02-05 15:33:08.120 +01:00 [INF] End processing HTTP request after 27.1476ms - 200
+2026-02-05 15:33:18.136 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:18.168 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:18.177 +01:00 [INF] HTTP GET /healthz responded 200 in 4.9943ms
+2026-02-05 15:33:18.177 +01:00 [INF] Received HTTP response headers after 6.557ms - 200
+2026-02-05 15:33:18.182 +01:00 [INF] End processing HTTP request after 45.4635ms - 200
+2026-02-05 15:33:28.198 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:28.208 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:28.217 +01:00 [INF] HTTP GET /healthz responded 200 in 3.7049ms
+2026-02-05 15:33:28.218 +01:00 [INF] Received HTTP response headers after 5.2463ms - 200
+2026-02-05 15:33:28.229 +01:00 [INF] End processing HTTP request after 30.3195ms - 200
+2026-02-05 15:33:38.247 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:38.280 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:38.302 +01:00 [INF] HTTP GET /healthz responded 200 in 6.3077ms
+2026-02-05 15:33:38.303 +01:00 [INF] Received HTTP response headers after 8.3512ms - 200
+2026-02-05 15:33:38.328 +01:00 [INF] End processing HTTP request after 80.7088ms - 200
+2026-02-05 15:33:48.338 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:48.343 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:48.350 +01:00 [INF] HTTP GET /healthz responded 200 in 3.1636ms
+2026-02-05 15:33:48.351 +01:00 [INF] Received HTTP response headers after 4.4443ms - 200
+2026-02-05 15:33:48.358 +01:00 [INF] End processing HTTP request after 20.1374ms - 200
+2026-02-05 15:33:58.364 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:58.368 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:33:58.377 +01:00 [INF] HTTP GET /healthz responded 200 in 4.7487ms
+2026-02-05 15:33:58.378 +01:00 [INF] Received HTTP response headers after 6.5639ms - 200
+2026-02-05 15:33:58.385 +01:00 [INF] End processing HTTP request after 21.7361ms - 200
+2026-02-05 15:34:08.408 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:08.413 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:08.421 +01:00 [INF] HTTP GET /healthz responded 200 in 3.9987ms
+2026-02-05 15:34:08.428 +01:00 [INF] Received HTTP response headers after 11.8807ms - 200
+2026-02-05 15:34:08.434 +01:00 [INF] End processing HTTP request after 25.8057ms - 200
+2026-02-05 15:34:18.457 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:18.463 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:18.486 +01:00 [INF] HTTP GET /healthz responded 200 in 6.1844ms
+2026-02-05 15:34:18.487 +01:00 [INF] Received HTTP response headers after 7.9838ms - 200
+2026-02-05 15:34:18.498 +01:00 [INF] End processing HTTP request after 41.2839ms - 200
+2026-02-05 15:34:28.522 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:28.555 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:28.571 +01:00 [INF] HTTP GET /healthz responded 200 in 9.1360ms
+2026-02-05 15:34:28.571 +01:00 [INF] Received HTTP response headers after 10.6475ms - 200
+2026-02-05 15:34:28.591 +01:00 [INF] End processing HTTP request after 68.3884ms - 200
+2026-02-05 15:34:38.612 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:38.615 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:38.624 +01:00 [INF] HTTP GET /healthz responded 200 in 4.5457ms
+2026-02-05 15:34:38.628 +01:00 [INF] Received HTTP response headers after 10.8982ms - 200
+2026-02-05 15:34:38.648 +01:00 [INF] End processing HTTP request after 36.0941ms - 200
+2026-02-05 15:34:48.665 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:48.670 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:48.743 +01:00 [INF] HTTP GET /healthz responded 200 in 4.7923ms
+2026-02-05 15:34:48.747 +01:00 [INF] Received HTTP response headers after 74.1116ms - 200
+2026-02-05 15:34:48.768 +01:00 [INF] End processing HTTP request after 103.3895ms - 200
+2026-02-05 15:34:58.778 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:58.782 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:34:58.791 +01:00 [INF] HTTP GET /healthz responded 200 in 4.5976ms
+2026-02-05 15:34:58.793 +01:00 [INF] Received HTTP response headers after 8.1389ms - 200
+2026-02-05 15:34:58.807 +01:00 [INF] End processing HTTP request after 28.7229ms - 200
+2026-02-05 15:35:08.819 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:08.823 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:08.831 +01:00 [INF] HTTP GET /healthz responded 200 in 3.4510ms
+2026-02-05 15:35:08.831 +01:00 [INF] Received HTTP response headers after 4.6978ms - 200
+2026-02-05 15:35:08.848 +01:00 [INF] End processing HTTP request after 28.6411ms - 200
+2026-02-05 15:35:18.861 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:18.864 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:18.872 +01:00 [INF] HTTP GET /healthz responded 200 in 3.9715ms
+2026-02-05 15:35:18.872 +01:00 [INF] Received HTTP response headers after 6.2095ms - 200
+2026-02-05 15:35:18.881 +01:00 [INF] End processing HTTP request after 20.3317ms - 200
+2026-02-05 15:35:28.892 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:28.897 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:28.905 +01:00 [INF] HTTP GET /healthz responded 200 in 3.8714ms
+2026-02-05 15:35:28.905 +01:00 [INF] Received HTTP response headers after 5.0349ms - 200
+2026-02-05 15:35:28.924 +01:00 [INF] End processing HTTP request after 32.825ms - 200
+2026-02-05 15:35:38.941 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:38.946 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:38.964 +01:00 [INF] HTTP GET /healthz responded 200 in 13.2015ms
+2026-02-05 15:35:38.964 +01:00 [INF] Received HTTP response headers after 14.5729ms - 200
+2026-02-05 15:35:38.969 +01:00 [INF] End processing HTTP request after 27.8567ms - 200
+2026-02-05 15:35:48.989 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:48.998 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:49.031 +01:00 [INF] HTTP GET /healthz responded 200 in 9.0791ms
+2026-02-05 15:35:49.032 +01:00 [INF] Received HTTP response headers after 13.0783ms - 200
+2026-02-05 15:35:49.039 +01:00 [INF] End processing HTTP request after 50.0073ms - 200
+2026-02-05 15:35:59.067 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:59.073 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:35:59.086 +01:00 [INF] HTTP GET /healthz responded 200 in 7.0270ms
+2026-02-05 15:35:59.087 +01:00 [INF] Received HTTP response headers after 9.2742ms - 200
+2026-02-05 15:35:59.098 +01:00 [INF] End processing HTTP request after 30.8892ms - 200
+2026-02-05 15:36:09.105 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:09.110 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:09.116 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2690ms
+2026-02-05 15:36:09.117 +01:00 [INF] Received HTTP response headers after 3.1503ms - 200
+2026-02-05 15:36:09.127 +01:00 [INF] End processing HTTP request after 22.2698ms - 200
+2026-02-05 15:36:19.145 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:19.148 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:19.154 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4490ms
+2026-02-05 15:36:19.154 +01:00 [INF] Received HTTP response headers after 3.3302ms - 200
+2026-02-05 15:36:19.166 +01:00 [INF] End processing HTTP request after 20.4897ms - 200
+2026-02-05 15:36:29.172 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:29.184 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:29.200 +01:00 [INF] HTTP GET /healthz responded 200 in 8.6779ms
+2026-02-05 15:36:29.201 +01:00 [INF] Received HTTP response headers after 10.2436ms - 200
+2026-02-05 15:36:29.217 +01:00 [INF] End processing HTTP request after 45.6276ms - 200
+2026-02-05 15:36:39.240 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:39.245 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:39.252 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8093ms
+2026-02-05 15:36:39.252 +01:00 [INF] Received HTTP response headers after 5.0887ms - 200
+2026-02-05 15:36:39.265 +01:00 [INF] End processing HTTP request after 24.7368ms - 200
+2026-02-05 15:36:49.273 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:49.276 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:49.321 +01:00 [INF] HTTP GET /healthz responded 200 in 4.9584ms
+2026-02-05 15:36:49.325 +01:00 [INF] Received HTTP response headers after 43.1782ms - 200
+2026-02-05 15:36:49.356 +01:00 [INF] End processing HTTP request after 84.8337ms - 200
+2026-02-05 15:36:59.381 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:59.384 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:36:59.390 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4267ms
+2026-02-05 15:36:59.390 +01:00 [INF] Received HTTP response headers after 3.2078ms - 200
+2026-02-05 15:36:59.404 +01:00 [INF] End processing HTTP request after 23.205ms - 200
+2026-02-05 15:37:09.416 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:09.423 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:09.436 +01:00 [INF] HTTP GET /healthz responded 200 in 3.8411ms
+2026-02-05 15:37:09.436 +01:00 [INF] Received HTTP response headers after 4.9456ms - 200
+2026-02-05 15:37:09.447 +01:00 [INF] End processing HTTP request after 31.2844ms - 200
+2026-02-05 15:37:19.460 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:19.468 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:19.474 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9852ms
+2026-02-05 15:37:19.475 +01:00 [INF] Received HTTP response headers after 4.9968ms - 200
+2026-02-05 15:37:19.483 +01:00 [INF] End processing HTTP request after 22.3803ms - 200
+2026-02-05 15:37:29.499 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:29.503 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:29.514 +01:00 [INF] HTTP GET /healthz responded 200 in 3.7252ms
+2026-02-05 15:37:29.514 +01:00 [INF] Received HTTP response headers after 4.8914ms - 200
+2026-02-05 15:37:29.526 +01:00 [INF] End processing HTTP request after 26.3524ms - 200
+2026-02-05 15:37:39.553 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:39.556 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:39.568 +01:00 [INF] HTTP GET /healthz responded 200 in 7.5861ms
+2026-02-05 15:37:39.568 +01:00 [INF] Received HTTP response headers after 9.3726ms - 200
+2026-02-05 15:37:39.583 +01:00 [INF] End processing HTTP request after 30.4053ms - 200
+2026-02-05 15:37:49.599 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:49.634 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:49.646 +01:00 [INF] HTTP GET /healthz responded 200 in 4.1745ms
+2026-02-05 15:37:49.648 +01:00 [INF] Received HTTP response headers after 6.7424ms - 200
+2026-02-05 15:37:49.655 +01:00 [INF] End processing HTTP request after 56.5543ms - 200
+2026-02-05 15:37:59.670 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:59.674 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:37:59.682 +01:00 [INF] HTTP GET /healthz responded 200 in 5.7757ms
+2026-02-05 15:37:59.683 +01:00 [INF] Received HTTP response headers after 7.2129ms - 200
+2026-02-05 15:37:59.722 +01:00 [INF] End processing HTTP request after 51.8054ms - 200
+2026-02-05 15:38:09.738 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:09.742 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:09.752 +01:00 [INF] HTTP GET /healthz responded 200 in 3.1101ms
+2026-02-05 15:38:09.753 +01:00 [INF] Received HTTP response headers after 6.0036ms - 200
+2026-02-05 15:38:09.759 +01:00 [INF] End processing HTTP request after 21.4926ms - 200
+2026-02-05 15:38:19.766 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:19.769 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:19.775 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3534ms
+2026-02-05 15:38:19.775 +01:00 [INF] Received HTTP response headers after 3.3583ms - 200
+2026-02-05 15:38:19.788 +01:00 [INF] End processing HTTP request after 22.2002ms - 200
+2026-02-05 15:38:29.793 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:29.798 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:29.805 +01:00 [INF] HTTP GET /healthz responded 200 in 2.4969ms
+2026-02-05 15:38:29.806 +01:00 [INF] Received HTTP response headers after 3.6784ms - 200
+2026-02-05 15:38:29.822 +01:00 [INF] End processing HTTP request after 28.6414ms - 200
+2026-02-05 15:38:39.835 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:39.838 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:39.845 +01:00 [INF] HTTP GET /healthz responded 200 in 2.2284ms
+2026-02-05 15:38:39.845 +01:00 [INF] Received HTTP response headers after 3.8574ms - 200
+2026-02-05 15:38:39.856 +01:00 [INF] End processing HTTP request after 20.2318ms - 200
+2026-02-05 15:38:49.862 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:49.866 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:49.906 +01:00 [INF] HTTP GET /healthz responded 200 in 4.5161ms
+2026-02-05 15:38:49.908 +01:00 [INF] Received HTTP response headers after 38.8133ms - 200
+2026-02-05 15:38:49.920 +01:00 [INF] End processing HTTP request after 58.0122ms - 200
+2026-02-05 15:38:59.931 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:59.934 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:38:59.939 +01:00 [INF] HTTP GET /healthz responded 200 in 2.7163ms
+2026-02-05 15:38:59.939 +01:00 [INF] Received HTTP response headers after 3.7575ms - 200
+2026-02-05 15:38:59.955 +01:00 [INF] End processing HTTP request after 24.1678ms - 200
+2026-02-05 15:39:09.974 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:09.982 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:09.989 +01:00 [INF] HTTP GET /healthz responded 200 in 3.5135ms
+2026-02-05 15:39:09.989 +01:00 [INF] Received HTTP response headers after 4.6172ms - 200
+2026-02-05 15:39:09.997 +01:00 [INF] End processing HTTP request after 22.6271ms - 200
+2026-02-05 15:39:20.016 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:20.022 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:20.035 +01:00 [INF] HTTP GET /healthz responded 200 in 8.9050ms
+2026-02-05 15:39:20.036 +01:00 [INF] Received HTTP response headers after 10.5379ms - 200
+2026-02-05 15:39:20.057 +01:00 [INF] End processing HTTP request after 41.6375ms - 200
+2026-02-05 15:39:30.099 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:30.136 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:30.162 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8140ms
+2026-02-05 15:39:30.164 +01:00 [INF] Received HTTP response headers after 5.7485ms - 200
+2026-02-05 15:39:30.186 +01:00 [INF] End processing HTTP request after 86.4706ms - 200
+2026-02-05 15:39:40.272 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:40.408 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:40.453 +01:00 [INF] HTTP GET /healthz responded 200 in 11.1386ms
+2026-02-05 15:39:40.453 +01:00 [INF] Received HTTP response headers after 12.674ms - 200
+2026-02-05 15:39:40.518 +01:00 [INF] End processing HTTP request after 246.3745ms - 200
+2026-02-05 15:39:50.539 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:50.545 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:39:50.554 +01:00 [INF] HTTP GET /healthz responded 200 in 4.2162ms
+2026-02-05 15:39:50.554 +01:00 [INF] Received HTTP response headers after 5.1117ms - 200
+2026-02-05 15:39:50.559 +01:00 [INF] End processing HTTP request after 20.0751ms - 200
+2026-02-05 15:40:00.578 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:00.591 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:00.599 +01:00 [INF] HTTP GET /healthz responded 200 in 5.2806ms
+2026-02-05 15:40:00.600 +01:00 [INF] Received HTTP response headers after 6.707ms - 200
+2026-02-05 15:40:00.612 +01:00 [INF] End processing HTTP request after 33.9706ms - 200
+2026-02-05 15:40:10.636 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:10.664 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:10.670 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9757ms
+2026-02-05 15:40:10.670 +01:00 [INF] Received HTTP response headers after 4.1697ms - 200
+2026-02-05 15:40:10.677 +01:00 [INF] End processing HTTP request after 40.7935ms - 200
+2026-02-05 15:40:20.684 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:20.690 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:20.700 +01:00 [INF] HTTP GET /healthz responded 200 in 5.5480ms
+2026-02-05 15:40:20.700 +01:00 [INF] Received HTTP response headers after 6.554ms - 200
+2026-02-05 15:40:20.716 +01:00 [INF] End processing HTTP request after 31.9533ms - 200
+2026-02-05 15:40:30.740 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:30.744 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:30.755 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2354ms
+2026-02-05 15:40:30.756 +01:00 [INF] Received HTTP response headers after 5.0621ms - 200
+2026-02-05 15:40:30.767 +01:00 [INF] End processing HTTP request after 27.2149ms - 200
+2026-02-05 15:40:40.777 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:40.782 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:40.799 +01:00 [INF] HTTP GET /healthz responded 200 in 3.6178ms
+2026-02-05 15:40:40.800 +01:00 [INF] Received HTTP response headers after 6.4677ms - 200
+2026-02-05 15:40:40.810 +01:00 [INF] End processing HTTP request after 33.7532ms - 200
+2026-02-05 15:40:50.822 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:50.829 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:40:50.890 +01:00 [INF] HTTP GET /healthz responded 200 in 7.9660ms
+2026-02-05 15:40:50.890 +01:00 [INF] Received HTTP response headers after 58.973ms - 200
+2026-02-05 15:40:50.905 +01:00 [INF] End processing HTTP request after 82.9994ms - 200
+2026-02-05 15:41:00.918 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:00.920 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:00.936 +01:00 [INF] HTTP GET /healthz responded 200 in 6.6193ms
+2026-02-05 15:41:00.936 +01:00 [INF] Received HTTP response headers after 7.9774ms - 200
+2026-02-05 15:41:00.941 +01:00 [INF] End processing HTTP request after 22.5898ms - 200
+2026-02-05 15:41:10.946 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:10.950 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:10.956 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3500ms
+2026-02-05 15:41:10.957 +01:00 [INF] Received HTTP response headers after 3.1728ms - 200
+2026-02-05 15:41:10.975 +01:00 [INF] End processing HTTP request after 28.9498ms - 200
+2026-02-05 15:41:20.988 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:20.992 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:21.000 +01:00 [INF] HTTP GET /healthz responded 200 in 2.9428ms
+2026-02-05 15:41:21.000 +01:00 [INF] Received HTTP response headers after 4.0396ms - 200
+2026-02-05 15:41:21.011 +01:00 [INF] End processing HTTP request after 23.2171ms - 200
+2026-02-05 15:41:31.035 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:31.040 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:31.050 +01:00 [INF] HTTP GET /healthz responded 200 in 4.5225ms
+2026-02-05 15:41:31.051 +01:00 [INF] Received HTTP response headers after 5.4135ms - 200
+2026-02-05 15:41:31.060 +01:00 [INF] End processing HTTP request after 24.7008ms - 200
+2026-02-05 15:41:41.088 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:41.108 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:41.115 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2015ms
+2026-02-05 15:41:41.116 +01:00 [INF] Received HTTP response headers after 4.1262ms - 200
+2026-02-05 15:41:41.224 +01:00 [INF] End processing HTTP request after 136.0724ms - 200
+2026-02-05 15:41:51.259 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:51.263 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:41:51.272 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8031ms
+2026-02-05 15:41:51.272 +01:00 [INF] Received HTTP response headers after 3.6877ms - 200
+2026-02-05 15:41:51.289 +01:00 [INF] End processing HTTP request after 29.5369ms - 200
+2026-02-05 15:42:01.302 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:01.305 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:01.310 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5692ms
+2026-02-05 15:42:01.310 +01:00 [INF] Received HTTP response headers after 3.4299ms - 200
+2026-02-05 15:42:01.323 +01:00 [INF] End processing HTTP request after 20.9981ms - 200
+2026-02-05 15:42:11.333 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:11.336 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:11.342 +01:00 [INF] HTTP GET /healthz responded 200 in 2.0455ms
+2026-02-05 15:42:11.342 +01:00 [INF] Received HTTP response headers after 2.8057ms - 200
+2026-02-05 15:42:11.358 +01:00 [INF] End processing HTTP request after 25.4659ms - 200
+2026-02-05 15:42:21.379 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:21.384 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:21.390 +01:00 [INF] HTTP GET /healthz responded 200 in 2.6163ms
+2026-02-05 15:42:21.391 +01:00 [INF] Received HTTP response headers after 4.1981ms - 200
+2026-02-05 15:42:21.407 +01:00 [INF] End processing HTTP request after 28.5944ms - 200
+2026-02-05 15:42:31.414 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:31.418 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:31.426 +01:00 [INF] HTTP GET /healthz responded 200 in 2.8317ms
+2026-02-05 15:42:31.426 +01:00 [INF] Received HTTP response headers after 3.8958ms - 200
+2026-02-05 15:42:31.437 +01:00 [INF] End processing HTTP request after 22.8382ms - 200
+2026-02-05 15:42:41.452 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:41.458 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:41.472 +01:00 [INF] HTTP GET /healthz responded 200 in 2.5695ms
+2026-02-05 15:42:41.473 +01:00 [INF] Received HTTP response headers after 4.949ms - 200
+2026-02-05 15:42:41.491 +01:00 [INF] End processing HTTP request after 39.193ms - 200
+2026-02-05 15:42:51.505 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:51.525 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:42:51.562 +01:00 [INF] HTTP GET /healthz responded 200 in 6.0228ms
+2026-02-05 15:42:51.562 +01:00 [INF] Received HTTP response headers after 33.5152ms - 200
+2026-02-05 15:42:51.571 +01:00 [INF] End processing HTTP request after 65.6962ms - 200
+2026-02-05 15:43:01.589 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:43:01.594 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:43:01.601 +01:00 [INF] HTTP GET /healthz responded 200 in 3.2081ms
+2026-02-05 15:43:01.602 +01:00 [INF] Received HTTP response headers after 3.9776ms - 200
+2026-02-05 15:43:01.627 +01:00 [INF] End processing HTTP request after 38.2606ms - 200
+2026-02-05 15:43:11.635 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:43:11.641 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:43:11.653 +01:00 [INF] HTTP GET /healthz responded 200 in 3.6846ms
+2026-02-05 15:43:11.653 +01:00 [INF] Received HTTP response headers after 4.6098ms - 200
+2026-02-05 15:43:11.667 +01:00 [INF] End processing HTTP request after 31.638ms - 200
+2026-02-05 15:43:21.679 +01:00 [INF] Start processing HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:43:21.683 +01:00 [INF] Sending HTTP request GET https://localhost:7233/healthz
+2026-02-05 15:43:21.689 +01:00 [INF] HTTP GET /healthz responded 200 in 2.3665ms
+2026-02-05 15:43:21.689 +01:00 [INF] Received HTTP response headers after 3.1542ms - 200
+2026-02-05 15:43:21.698 +01:00 [INF] End processing HTTP request after 18.6486ms - 200
